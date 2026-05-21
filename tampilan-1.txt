@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html amp lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<title>TESTING1 - Nexus Of Champions</title>
+
+<link rel="canonical" href="https://example.com/">
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<!-- AMP COMPONENT -->
+<script async custom-element="amp-carousel"
+src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style amp-custom>
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Outfit:wght@300;500;700;800&display=swap');
+
+:root{
+    --gold:#ffd86b;
+    --gold-bright:#ffb300;
+    --crimson:#ff003c;
+    --dark-red:#4a0011;
+    --bg-black:#050505;
+    --glass:rgba(255,255,255,.03);
+    --line:rgba(255,255,255,.05);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    background:var(--bg-black);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* BACKGROUND */
+
+body:before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 10% 10%, var(--dark-red) 0%, transparent 20%),
+    radial-gradient(circle at 90% 90%, #1a0000 0%, transparent 20%);
+    z-index:-1;
+}
+
+.container{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+    padding:0 15px;
+}
+
+/* HEADER */
+
+header{
+    background:rgba(0,0,0,.88);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,0,60,.15);
+    position:sticky;
+    top:0;
+    z-index:999;
+    padding:10px 0;
+}
+
+.header-grid{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    text-decoration:none;
+}
+
+.logo h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:28px;
+    font-weight:900;
+    letter-spacing:2px;
+    color:#fff;
+    text-shadow:0 0 12px var(--crimson);
+}
+
+/* NAV */
+
+.nav-side{
+    display:flex;
+    gap:6px;
+}
+
+.nav-link{
+    text-decoration:none;
+    color:#aaa;
+    font-size:11px;
+    font-weight:700;
+    padding:9px 14px;
+    border-radius:6px;
+    text-transform:uppercase;
+    background:rgba(255,255,255,.02);
+    border:1px solid transparent;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:var(--gold);
+    border-color:rgba(255,0,60,.25);
+    background:rgba(255,0,60,.08);
+}
+
+/* BUTTON */
+
+.auth-side{
+    display:flex;
+    gap:8px;
+}
+
+.btn-auth{
+    font-family:'Orbitron',sans-serif;
+    font-size:10px;
+    font-weight:900;
+    padding:8px 18px;
+    border:none;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+
+.btn-auth.login{
+    background:transparent;
+    color:var(--gold);
+    border:1px solid var(--gold);
+    border-radius:5px;
+}
+
+.btn-auth.daftar{
+    background:linear-gradient(180deg,#ff295f,#d30038);
+    color:#fff;
+    clip-path:polygon(10% 0%,100% 0%,90% 100%,0% 100%);
+}
+
+/* HERO */
+
+.hero-wrap{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.hero-wrap amp-carousel{
+    border-radius:0 0 20px 20px;
+    overflow:hidden;
+}
+
+.hero-wrap amp-img img{
+    object-fit:cover;
+    object-position:center;
+}
+
+/* JACKPOT */
+
+.jackpot-hologram{
+    position:relative;
+    margin-top:-30px;
+    z-index:10;
+    display:flex;
+    justify-content:center;
+}
+
+.jackpot-box{
+    background:rgba(10,0,0,.92);
+    border:1px solid rgba(255,0,60,.4);
+    border-radius:14px;
+    padding:12px 35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(255,0,60,.18);
+    backdrop-filter:blur(10px);
+}
+
+.jp-title{
+    font-family:'Orbitron',sans-serif;
+    font-size:10px;
+    color:var(--gold);
+    letter-spacing:3px;
+}
+
+.jp-number{
+    font-family:'Orbitron',sans-serif;
+    font-size:32px;
+    font-weight:900;
+    background:linear-gradient(to bottom,#fff,var(--gold));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-top:4px;
+}
+
+.jp-live{
+    font-size:9px;
+    color:var(--crimson);
+    letter-spacing:2px;
+    margin-top:4px;
+    font-weight:700;
+}
+
+/* SECTION */
+
+.section-wrap{
+    padding:40px 0;
+}
+
+.title-accent{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-left:4px solid var(--crimson);
+    padding-left:15px;
+    margin-bottom:25px;
+}
+
+.title-accent h2{
+    font-family:'Orbitron',sans-serif;
+    font-size:18px;
+    text-transform:uppercase;
+}
+
+.btn-viewall{
+    text-decoration:none;
+    color:var(--gold);
+    font-size:12px;
+}
+
+/* GAME GRID */
+
+.game-display{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:15px;
+}
+
+.game-card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.game-card:hover{
+    transform:translateY(-5px);
+    border-color:var(--crimson);
+}
+
+.game-info{
+    padding:10px;
+    text-align:center;
+    background:rgba(0,0,0,.85);
+}
+
+.game-info span{
+    font-size:10px;
+    font-weight:700;
+    color:#ccc;
+    text-transform:uppercase;
+}
+
+/* PROVIDER */
+
+.providers-display{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+}
+
+.provider-card{
+    background:var(--glass);
+    border:1px solid var(--line);
+    border-radius:10px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+}
+
+.provider-card amp-img{
+    opacity:.7;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000;
+    border-top:1px solid rgba(255,0,60,.15);
+    padding:40px 0;
+    margin-top:50px;
+}
+
+.footer-title{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.footer-title h3{
+    font-family:'Orbitron',sans-serif;
+    color:var(--gold);
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+.info-footer{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.info-col h4{
+    font-family:'Orbitron',sans-serif;
+    color:var(--crimson);
+    font-size:11px;
+    margin-bottom:15px;
+}
+
+.info-col a{
+    display:block;
+    text-decoration:none;
+    color:#666;
+    font-size:10px;
+    margin-bottom:8px;
+}
+
+.info-col a:hover{
+    color:var(--gold);
+}
+
+.copyright{
+    text-align:center;
+    color:#edbc0c;
+    font-size:10px;
+    margin-top:40px;
+    letter-spacing:1px;
+}
+
+/* =========================
+   MOBILE VERSION
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        padding:8px 0;
+    }
+
+    .header-grid{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .logo h1{
+        font-size:22px;
+        text-align:center;
+    }
+
+    /* MOBILE NAV */
+
+    .nav-side{
+        display:flex;
+        width:100%;
+        overflow-x:auto;
+        gap:8px;
+        padding-bottom:2px;
+        scrollbar-width:none;
+    }
+
+    .nav-side::-webkit-scrollbar{
+        display:none;
+    }
+
+    .nav-link{
+        flex:0 0 auto;
+        font-size:9px;
+        padding:8px 12px;
+        white-space:nowrap;
+        border-radius:8px;
+        border:1px solid rgba(255,255,255,.05);
+        background:rgba(255,255,255,.03);
+    }
+
+    .auth-side{
+        width:100%;
+        justify-content:center;
+    }
+
+    .btn-auth{
+        font-size:9px;
+        padding:7px 14px;
+    }
+
+    /* HERO MOBILE */
+
+    .hero-wrap{
+        margin-top:5px;
+    }
+
+    .hero-wrap amp-carousel{
+        border-radius:0 0 18px 18px;
+    }
+
+    .hero-wrap amp-img{
+        height:auto;
+    }
+
+    .hero-wrap amp-img img{
+        object-fit:cover;
+        object-position:center;
+    }
+
+    /* JACKPOT MOBILE */
+
+    .jackpot-hologram{
+        margin-top:-18px;
+        padding:0 12px;
+    }
+
+    .jackpot-box{
+        width:100%;
+        max-width:320px;
+        padding:8px 15px;
+        border-radius:12px;
+        box-shadow:0 5px 18px rgba(255,0,60,.18);
+    }
+
+    .jp-title{
+        font-size:8px;
+        letter-spacing:2px;
+    }
+
+    .jp-number{
+        font-size:18px;
+        line-height:1.3;
+    }
+
+    .jp-live{
+        font-size:7px;
+        letter-spacing:1px;
+        margin-top:2px;
+    }
+
+    /* SECTION */
+
+    .section-wrap{
+        padding:28px 0;
+    }
+
+    .title-accent{
+        padding-left:10px;
+        margin-bottom:16px;
+    }
+
+    .title-accent h2{
+        font-size:13px;
+    }
+
+    .btn-viewall{
+        font-size:10px;
+    }
+
+    /* GAME GRID */
+
+    .game-display{
+        grid-template-columns:repeat(3,1fr);
+        gap:10px;
+    }
+
+    .game-card{
+        border-radius:10px;
+    }
+
+    .game-info{
+        padding:6px;
+    }
+
+    .game-info span{
+        font-size:8px;
+    }
+
+    /* PROVIDER */
+
+    .providers-display{
+        grid-template-columns:repeat(3,1fr);
+        gap:8px;
+    }
+
+    .provider-card{
+        height:58px;
+        border-radius:8px;
+        padding:8px;
+    }
+
+    /* FOOTER */
+
+    .info-footer{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .footer-title h3{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    .copyright{
+        font-size:9px;
+        line-height:1.5;
+    }
+
+}
+
+</style>
+
+<!-- AMP BOILERPLATE -->
+
+<style amp-boilerplate>
+body{
+-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+animation:-amp-start 8s steps(1,end) 0s 1 normal both
+}
+@-webkit-keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+@-moz-keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+@-ms-keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+@-o-keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+@keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+/* =========================
+   GRAND JACKPOT ANIMATION
+========================= */
+
+.jackpot-box{
+    position:relative;
+    overflow:hidden;
+}
+
+/* glow pulse */
+.jackpot-box::before{
+    content:'';
+    position:absolute;
+    inset:-50%;
+    background:radial-gradient(circle, rgba(255,0,60,.25), transparent 60%);
+    animation:jpGlow 3s infinite ease-in-out;
+    z-index:0;
+}
+
+@keyframes jpGlow{
+    0%,100%{transform:scale(1); opacity:.4;}
+    50%{transform:scale(1.2); opacity:.8;}
+}
+
+/* shimmer line */
+.jackpot-box::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+    animation:jpShimmer 2.8s infinite;
+    z-index:1;
+}
+
+@keyframes jpShimmer{
+    0%{left:-100%;}
+    100%{left:120%;}
+}
+
+/* pastikan isi di atas effect */
+.jp-title,
+.jp-number,
+.jp-live{
+    position:relative;
+    z-index:2;
+}
+
+/* angka jackpot naik turun halus */
+.jp-number{
+    animation:jpPulse 1.8s infinite ease-in-out;
+}
+
+@keyframes jpPulse{
+    0%,100%{transform:scale(1); filter:brightness(1);}
+    50%{transform:scale(1.05); filter:brightness(1.3);}
+}
+</style>
+
+<noscript>
+<style amp-boilerplate>
+body{
+-webkit-animation:none;
+-moz-animation:none;
+-ms-animation:none;
+animation:none
+}
+
+/* =========================
+   VEGAS SLOT MACHINE JACKPOT
+========================= */
+
+.jp-number{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+    font-family:'Orbitron',sans-serif;
+    font-weight:900;
+}
+
+/* currency */
+.currency{
+    margin-right:6px;
+    font-size:14px;
+    color:var(--gold);
+}
+
+/* dot */
+.dot{
+    color:var(--gold);
+    font-weight:900;
+}
+
+/* reel box */
+.reel{
+    height:22px;
+    overflow:hidden;
+    display:inline-block;
+    width:14px;
+    position:relative;
+}
+
+/* angka dalam reel */
+.reel span{
+    display:block;
+    height:22px;
+    line-height:22px;
+    text-align:center;
+    font-size:16px;
+}
+
+/* ANIMASI SLOT (berhenti bertahap) */
+
+/* semua reel spin dulu */
+.reel span{
+    animation:spin 0.4s infinite linear;
+}
+
+/* kanan dulu berhenti → kiri terakhir */
+
+/* reel 9 (paling kanan) stop paling cepat */
+.r9 span{animation:stop 2s forwards ease-out;}
+.r8 span{animation:stop 2.4s forwards ease-out;}
+.r7 span{animation:stop 2.8s forwards ease-out;}
+.r6 span{animation:stop 3.2s forwards ease-out;}
+.r5 span{animation:stop 3.6s forwards ease-out;}
+.r4 span{animation:stop 4s forwards ease-out;}
+.r3 span{animation:stop 4.4s forwards ease-out;}
+.r2 span{animation:stop 4.8s forwards ease-out;}
+.r1 span{animation:stop 5.2s forwards ease-out;}
+
+/* spin efek awal */
+@keyframes spin{
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-66px);}
+}
+
+/* STOP EFFECT (final lock) */
+@keyframes stop{
+    0%{transform:translateY(-66px);}
+    100%{transform:translateY(0);}
+}
+</style>
+</noscript>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container header-grid">
+
+<a href="#" class="logo">
+<h1>TESTING1</h1>
+</a>
+
+<nav class="nav-side">
+<a href="#" class="nav-link active">HOT GAMES</a>
+<a href="#" class="nav-link">SLOTS</a>
+<a href="#" class="nav-link">LIVE CASINO</a>
+<a href="#" class="nav-link">BONUS</a>
+<a href="#" class="nav-link">PROMO</a>
+</nav>
+
+<div class="auth-side">
+<button class="btn-auth login">LOGIN</button>
+<button class="btn-auth daftar">DAFTAR</button>
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero-wrap">
+
+<amp-carousel
+width="1920"
+height="700"
+layout="responsive"
+type="slides"
+autoplay
+delay="5000"
+loop>
+
+<div>
+
+<amp-img
+src="https://veldrive.com/eBXS7ZVf/banner-test-1.png"
+width="1920"
+height="700"
+layout="responsive"
+alt="Banner TESTING1">
+
+</amp-img>
+
+</div>
+
+</amp-carousel>
+
+</section>
+
+<!-- JACKPOT -->
+
+<div class="jackpot-hologram">
+
+<div class="jackpot-box">
+
+<div class="jp-title">
+GRAND JACKPOT
+</div>
+
+<div class="jp-number">
+
+  <span class="currency">IDR</span>
+
+  <span class="reel r1"><span>8</span><span>3</span><span>6</span><span>8</span></span>
+  <span class="reel r2"><span>4</span><span>7</span><span>2</span><span>4</span></span>
+  <span class="reel r3"><span>2</span><span>9</span><span>5</span><span>2</span></span>
+
+</div>
+
+<div class="jp-live">
+LIVE UPDATE REAL TIME
+</div>
+
+</div>
+
+</div>
+
+<!-- MAIN -->
+
+<main class="container">
+
+<!-- GAME SECTION -->
+
+<section class="section-wrap">
+
+<div class="title-accent">
+<h2>Game Tergacor Hari Ini</h2>
+<a href="#" class="btn-viewall">Lihat Semua</a>
+</div>
+
+<div class="game-display">
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/muscle-fortune.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Muscle Fortune"></amp-img>
+<div class="game-info"><span>Muscle Fortune</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/olympus.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Olympus"></amp-img>
+<div class="game-info"><span>Gates Of Olympus</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/koi-gate.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Koi Gate"></amp-img>
+<div class="game-info"><span>Koi Gate</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/mahjongways2.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Mahjong"></amp-img>
+<div class="game-info"><span>Mahjong Ways 2</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/princessratligh.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Princess"></amp-img>
+<div class="game-info"><span>Starlight Princess</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/sugarrush.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Sugar Rush"></amp-img>
+<div class="game-info"><span>Sugar Rush</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/Power%20of%20Thor%20Megaways.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Sugar Rush"></amp-img>
+<div class="game-info"><span>Power Of Thor</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/Gates%20of%20Gatot%20Kaca.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Sugar Rush"></amp-img>
+<div class="game-info"><span>Gates Of Gatot Kaca</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/Aztec%20Gems.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Sugar Rush"></amp-img>
+<div class="game-info"><span>Aztec Games</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/Treasures%20of%20Aztec.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Sugar Rush"></amp-img>
+<div class="game-info"><span>Treasures Of Aztec</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/Lucky%20Neko.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Sugar Rush"></amp-img>
+<div class="game-info"><span>Lucky Neko</span></div>
+</div>
+
+<div class="game-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/Gem%20Saviour%20Conquest.jpg"
+width="300"
+height="380"
+layout="responsive"
+alt="Sugar Rush"></amp-img>
+<div class="game-info"><span>Game Saviour Conquest</span></div>
+</div>
+</div>
+
+</section>
+
+<!-- PROVIDER -->
+
+<section class="section-wrap" style="border-top:1px solid rgba(255,255,255,.05);">
+
+<div class="title-accent">
+<h2>Provider Terpopuler</h2>
+<a href="#" class="btn-viewall">Lihat Semua</a>
+</div>
+
+<div class="providers-display">
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/pp-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="PP"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/pgsoft-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="PG"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/spade-gaming-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Spade"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/habanero-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Habanero"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/joker-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Joker"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/jili-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Jili"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/playngo-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Jili"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/no-limit-city-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Jili"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/slot88-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Jili"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/cq9-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Jili"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/playtech-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Jili"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="https://veldrive.com/eBXS7ZVf/microgaming-active.webp"
+width="180"
+height="80"
+layout="intrinsic"
+alt="Jili"></amp-img>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-title">
+<h3>TESTING1 # UJI COBA TAMPILAN LAGI BY BAYU</h3>
+</div>
+
+<section class="info-footer">
+
+<div class="info-col">
+<h4>KEBIJAKAN</h4>
+<a href="#">Tentang TESTING1</a>
+<a href="#">Responsible Gambling</a>
+<a href="#">Bantuan 24/7</a>
+</div>
+
+<div class="info-col">
+<h4>PLATFORM</h4>
+<a href="#">Promosi Gacor</a>
+<a href="#">VIP Games</a>
+<a href="#">Referral Program</a>
+</div>
+
+<div class="info-col">
+<h4>KATEGORI</h4>
+<a href="#">Hot Games</a>
+<a href="#">Live Casino</a>
+<a href="#">Slots Online</a>
+</div>
+
+<div class="info-col">
+<h4>DUKUNGAN</h4>
+<a href="#">Whatsapp Kami</a>
+<a href="#">Telegram Resmi</a>
+</div>
+
+<div class="info-col">
+<h4>MEDIA SOSIAL</h4>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">Youtube</a>
+</div>
+
+</section>
+
+<div class="copyright">
+© 2026 TESTING1 COPYRIGHT RESERVED | 18+ | BY SUPPORT
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
