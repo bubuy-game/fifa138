@@ -1,1 +1,421 @@
+:root{
+gold:#ffd86b;
+gold2:#ffb300;
+crimson:#ff004c;
+bg:#050505;
+card:#111;
+line:rgba(255,255,255,.06);
+}
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Outfit',sans-serif;
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left, rgba(255,0,80,.18), transparent 25%),
+radial-gradient(circle at bottom right, rgba(255,180,0,.12), transparent 30%);
+z-index:-1;
+}
+
+.container{
+width:100%;
+max-width:1400px;
+margin:auto;
+padding:0 15px;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(0,0,0,.88);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(255,255,255,.05);
+padding:12px 0;
+}
+
+.header-grid{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+.logo{
+text-decoration:none;
+}
+
+.logo h1{
+font-family:'Orbitron',sans-serif;
+font-size:30px;
+font-weight:900;
+letter-spacing:2px;
+color:#fff;
+text-shadow:0 0 15px rgba(255,179,0,.5);
+}
+
+.nav-side{
+display:flex;
+gap:8px;
+}
+
+.nav-link{
+text-decoration:none;
+color:#aaa;
+font-size:11px;
+font-weight:700;
+padding:10px 15px;
+text-transform:uppercase;
+border-radius:8px;
+transition:.3s;
+}
+
+.nav-link.active,
+.nav-link:hover{
+background:rgba(255,179,0,.12);
+color:var(--gold);
+}
+
+.auth-side{
+display:flex;
+gap:10px;
+}
+
+.btn-auth{
+font-family:'Orbitron',sans-serif;
+padding:9px 18px;
+font-size:10px;
+font-weight:800;
+border:none;
+cursor:pointer;
+}
+
+.login{
+background:transparent;
+border:1px solid var(--gold);
+color:var(--gold);
+border-radius:6px;
+}
+
+.daftar{
+background:linear-gradient(180deg,#ff3366,#cc0033);
+color:#fff;
+border-radius:6px;
+}
+
+.hero-wrap{
+position:relative;
+overflow:hidden;
+}
+
+.hero-wrap amp-carousel{
+border-radius:0 0 24px 24px;
+overflow:hidden;
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.2));
+}
+
+.hero-overlay h2{
+font-family:'Orbitron',sans-serif;
+font-size:44px;
+max-width:900px;
+line-height:1.2;
+margin-bottom:15px;
+text-shadow:0 5px 15px rgba(0,0,0,.6);
+}
+
+.hero-overlay p{
+max-width:700px;
+font-size:15px;
+line-height:1.8;
+color:#ddd;
+}
+
+.hero-button{
+margin-top:22px;
+display:inline-block;
+padding:14px 28px;
+text-decoration:none;
+background:linear-gradient(180deg,var(--gold2),#ff8c00);
+color:#000;
+font-weight:800;
+border-radius:10px;
+}
+
+.status-box-wrap{
+margin-top:-35px;
+position:relative;
+z-index:10;
+display:flex;
+justify-content:center;
+}
+
+.status-box{
+background:rgba(0,0,0,.92);
+border:1px solid rgba(255,179,0,.25);
+padding:14px 40px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.status-title{
+font-size:11px;
+letter-spacing:2px;
+color:var(--gold);
+font-family:'Orbitron',sans-serif;
+}
+
+.status-number{
+font-family:'Orbitron',sans-serif;
+font-size:34px;
+font-weight:900;
+margin-top:6px;
+background:linear-gradient(to bottom,#fff,var(--gold));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.status-live{
+font-size:10px;
+letter-spacing:2px;
+color:#ff5577;
+margin-top:4px;
+}
+
+.section-wrap{
+padding:50px 0;
+}
+
+.section-dark{
+border-top:1px solid rgba(255,255,255,.05);
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.title-accent{
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-left:4px solid var(--crimson);
+padding-left:14px;
+margin-bottom:25px;
+}
+
+.title-accent h2{
+font-family:'Orbitron',sans-serif;
+font-size:20px;
+}
+
+.btn-viewall{
+text-decoration:none;
+color:var(--gold);
+font-size:12px;
+}
+
+.game-display{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.game-card{
+background:#111;
+border:1px solid #222;
+border-radius:16px;
+overflow:hidden;
+transition:.3s;
+}
+
+.game-card:hover{
+transform:translateY(-5px);
+border-color:var(--gold2);
+}
+
+.game-info{
+padding:12px;
+text-align:center;
+}
+
+.game-info span{
+font-size:12px;
+font-weight:700;
+text-transform:uppercase;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.feature-card{
+background:#111;
+border:1px solid var(--line);
+padding:24px;
+border-radius:16px;
+}
+
+.feature-card h3{
+font-family:'Orbitron',sans-serif;
+margin-bottom:12px;
+color:var(--gold);
+font-size:16px;
+}
+
+.feature-card p{
+font-size:14px;
+line-height:1.7;
+color:#bbb;
+}
+
+.article-box{
+background:#101010;
+padding:30px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.article-box p{
+font-size:15px;
+line-height:1.9;
+color:#ccc;
+margin-bottom:20px;
+}
+
+footer{
+background:#000;
+padding:45px 0;
+margin-top:50px;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+.footer-title{
+text-align:center;
+margin-bottom:25px;
+}
+
+.footer-title h3{
+font-family:'Orbitron',sans-serif;
+color:var(--gold);
+font-size:20px;
+}
+
+.info-footer{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.info-col h4{
+font-size:12px;
+margin-bottom:15px;
+color:#ff5577;
+font-family:'Orbitron',sans-serif;
+}
+
+.info-col a{
+display:block;
+text-decoration:none;
+color:#777;
+font-size:12px;
+margin-bottom:10px;
+}
+
+.info-col a:hover{
+color:var(--gold);
+}
+
+.copyright{
+margin-top:35px;
+text-align:center;
+font-size:11px;
+color:#bcbcbc;
+}
+
+@media(max-width:768px){
+
+.header-grid{
+flex-direction:column;
+}
+
+.logo h1{
+font-size:24px;
+}
+
+.nav-side{
+overflow-x:auto;
+width:100%;
+}
+
+.nav-link{
+white-space:nowrap;
+font-size:9px;
+padding:8px 12px;
+}
+
+.hero-overlay h2{
+font-size:24px;
+}
+
+.hero-overlay p{
+font-size:12px;
+line-height:1.6;
+}
+
+.hero-button{
+padding:11px 20px;
+font-size:11px;
+}
+
+.status-box{
+width:90%;
+padding:12px 20px;
+}
+
+.status-number{
+font-size:22px;
+}
+
+.game-display{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.feature-grid{
+grid-template-columns:1fr;
+}
+
+.info-footer{
+grid-template-columns:repeat(2,1fr);
+}
+
+.article-box{
+padding:20px;
+}
+
+.article-box p{
+font-size:13px;
+}
