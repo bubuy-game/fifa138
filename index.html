@@ -47,21 +47,44 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 .trending-title{ font-size:20px; font-weight:900; text-align:center; color:#ffcc70; margin-bottom:20px; font-family:'Orbitron',sans-serif; }
 .provider-title{ font-size:14px; font-weight:800; color:#ffcc70; margin:12px 0; }
 
-/* REFINED GRID (Desktop: 8 Kolom Kesamping) */
+/* REFINED GRID */
 .slot-grid-8{ display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-bottom:16px; }
 .provider-grid-8{ display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-bottom:14px; }
 
 .slot-card{ aspect-ratio:1/1; border-radius:12px; overflow:hidden; border:1px solid rgba(255,170,0,.18); background:#1a0000; transition: .3s ease; }
 .slot-card:hover{ border-color: #ffcc70; transform: translateY(-2px); }
 
-.provider-card{ aspect-ratio:7/3; border-radius:10px; display:flex; align-items:center; justify-content:center; padding:6px; background:linear-gradient(180deg,#1a0000,#0d0000); border:1px solid rgba(255,170,0,.15); transition: .3s ease; }
-.provider-card:hover{ border-color: #ffcc70; transform: translateY(-2px); }
-.provider-card amp-img{ max-width:80%; height:auto; object-fit:contain; }
+.provider-grid-8 { 
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr); 
+    gap: 10px; 
+    margin-bottom: 14px; 
+}
+.provider-card { 
+    aspect-ratio: 7/3; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 6px; 
+    background: linear-gradient(180deg, #1a0000, #0d0000); 
+    border: 1px solid rgba(255,170,0,.15); 
+    transition: .3s ease; 
+    height: 50px;
+}
+.provider-card:hover { 
+    border-color: #ffcc70; 
+    transform: translateY(-2px); 
+}
+.provider-card amp-img { 
+    max-width: 90%; 
+    max-height: 85%; 
+}
 
 /* META INFO */
 .meta-info{ text-align:center; font-size:12px; line-height:1.8; color:#ffe7c2; background:rgba(255,255,255,.03); border:1px solid rgba(255,204,112,.1); padding:14px; border-radius:16px; margin:22px 0; }
 
-/* REFINED PAYMENT (Desktop: 7 Kolom Sejajar) */
+/* REFINED PAYMENT */
 .payment-section{ margin-top:24px; padding:18px; background:rgba(255,255,255,.03); border-radius:20px; border:1px solid rgba(255,170,0,.12); }
 .payment-title{ font-size:18px; font-family:'Orbitron',sans-serif; font-weight:800; text-align:center; color:#ffcc70; margin-bottom:18px; }
 .payment-grid{ display:grid; grid-template-columns:repeat(7,1fr); gap:10px; }
@@ -78,7 +101,7 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 .faq-row{ padding:14px; border-radius:14px; background:rgba(255,255,255,.03); margin-bottom:12px; border:1px solid rgba(255,255,255,.04); }
 .faq-header{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
 .faq-name{ font-size:13px; font-weight:700; color:#ffcc70; }
-.faq-stars{ font-size: 11px; color: #ffcc70; letter-spacing: 1px; }
+.faq-stars{ font-size: 13px; color: #ffcc70; letter-spacing: 2px; }
 .faq-text{ font-size:12px; line-height:1.7; color:#ffe7c2; }
 
 /* ARTICLE */
@@ -89,15 +112,16 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 .footer-bottom{ margin-top:30px; padding:20px 0; text-align:center; border-top:1px solid rgba(255,204,112,.08); }
 .footer-bottom p{ font-size:11px; font-family:'Orbitron',sans-serif; color:#ffcc70; }
 
-/* BOTTOM NAV */
-.bottom-nav{ position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:calc(100% - 24px); max-width:1200px; height:70px; background:rgba(15,0,0,.94); display:flex; align-items:center; justify-content:space-between; padding:0 18px; border-radius:24px 24px 0 0; z-index:999; border: 1px solid rgba(255,204,112,.15); border-bottom: none; }
-.bottom-left, .bottom-right{ width:80px; display:flex; justify-content:center; }
-.nav-btn{ display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#ffcc70; gap:3px; }
-.nav-btn span{ font-size:9px; font-family:'Orbitron',sans-serif; }
-.nav-center{ position:absolute; left:50%; transform:translateX(-50%) translateY(-18px); width:66px; height:66px; border-radius:50%; background:linear-gradient(180deg,#ffcc70,#c58a00); display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#120000; font-weight:900; box-shadow: 0 4px 15px rgba(255,170,0,0.3); }
-.nav-center span{ font-size:9px; }
+/* FIXED BOTTOM NAV */
+.bottom-nav{ position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:calc(100% - 24px); max-width:1200px; height:75px; background:rgba(15,0,0,.96); display:flex; align-items:center; justify-content:space-between; padding:0 18px; border-radius:24px 24px 0 0; z-index:999; border: 1px solid rgba(255,204,112,.15); border-bottom: none; }
+.bottom-left, .bottom-right{ width:90px; display:flex; justify-content:center; }
+.nav-btn{ display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#ffcc70; gap:5px; }
+.nav-btn span{ font-size:10px; font-family:'Orbitron',sans-serif; font-weight:700; }
+.nav-btn amp-img{ display:block; margin:0 auto; }
+.nav-center{ position:absolute; left:50%; transform:translateX(-50%) translateY(-18px); width:66px; height:66px; border-radius:50%; background:linear-gradient(180deg,#ffcc70,#c58a00); display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#120000; font-weight:900; box-shadow: 0 4px 15px rgba(255,170,0,0.4); }
+.nav-center span{ font-size:10px; margin-top:2px; font-family:'Orbitron',sans-serif; }
 
-/* RESPONSIVE MOBILE SENSITIVE */
+/* RESPONSIVE MOBILE */
 @media(max-width:768px){
 .game-nav{ gap:6px; }
 .nav-label{ font-size:8px; }
@@ -113,6 +137,16 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 .article-text{ font-size:12px; line-height:1.9; }
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FIFA138",
+  "url": "https://bubuy-game.github.io/fifa138/",
+  "logo": "https://bubuy-game.github.io/fifa138/asset/logo.png",
+  "description": "FIFA138 merupakan website game modern dengan tampilan premium futuristik, akses cepat, navigasi ringan, dan pengalaman hiburan digital modern."
+}
+</script>
 </head>
 
 <body>
@@ -172,7 +206,7 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
     <div class="provider-card"><amp-img src="asset/pp-active.webp" width="120" height="60" layout="intrinsic" alt="PRAGMATIC"></amp-img></div>
     <div class="provider-card"><amp-img src="asset/no-limit-city-active.webp" width="120" height="60" layout="intrinsic" alt="NO LIMIT CITY"></amp-img></div>
     <div class="provider-card"><amp-img src="asset/slot88-active.webp" width="120" height="60" layout="intrinsic" alt="SLOT88"></amp-img></div>
-    <div class="provider-card"><amp-img src="asset/slot88-active.webp" width="120" height="60" layout="intrinsic" alt="SLOT88"></amp-img></div>
+    <div class="provider-card"><amp-img src="asset/spade-gaming-active.webp" width="120" height="60" layout="intrinsic" alt="SPADEGAMING"></amp-img></div>
 </div>
 </div>
 </section>
@@ -181,6 +215,8 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 FIFA138 menghadirkan pengalaman hiburan digital modern dengan tampilan premium, navigasi ringan, dan desain futuristik yang nyaman di semua perangkat.
 </div>
 
+<section class="payment-section">
+<div class="payment-title">METODE PEMBAYARAN DIGITAL</div>
 <div class="payment-grid">
     <div class="payment-card"><amp-img src="asset/bca.png" width="120" height="60" layout="intrinsic" alt="BCA"></amp-img></div>
     <div class="payment-card"><amp-img src="asset/bni.png" width="120" height="60" layout="intrinsic" alt="BNI"></amp-img></div>
@@ -190,6 +226,7 @@ FIFA138 menghadirkan pengalaman hiburan digital modern dengan tampilan premium, 
     <div class="payment-card"><amp-img src="asset/mandiri.png" width="120" height="60" layout="intrinsic" alt="MANDIRI"></amp-img></div>
     <div class="payment-card"><amp-img src="asset/maybank.png" width="120" height="60" layout="intrinsic" alt="MAYBANK"></amp-img></div>
 </div>
+</section>
 
 <section class="info-section">
 <div class="info-box">
@@ -229,7 +266,7 @@ FIFA138 menghadirkan pengalaman hiburan digital modern dengan tampilan premium, 
 
 <div class="faq-row">
     <div class="faq-header">
-        <div class="faq-name">Fajar Bima - Jakarta  </div>
+        <div class="faq-name">Fajar Bima - Jakarta</div>
         <div class="faq-stars">⭐⭐⭐⭐⭐</div>
     </div>
     <div class="faq-text">Transisi antar halamannya mulus banget. Berasa kelas premium dan digarap secara profesional.</div>
@@ -263,7 +300,6 @@ Jadi, tunggu apa lagi? Nikmati kombinasi apik antara kecepatan akses yang instan
 </footer>
 
 <div class="bottom-nav">
-
 <div class="bottom-left">
     <a href="https://linkly.link/2F9LL" class="nav-btn">
         <amp-img src="asset/telegram.png" width="24" height="24" layout="fixed" alt="Telegram"></amp-img>
