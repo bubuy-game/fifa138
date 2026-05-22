@@ -243,32 +243,49 @@ padding:6px;
 
 .payment-section{
 margin-top:25px;
-padding:15px;
-background:rgba(255,255,255,.03);
-border-radius:15px;
-border:1px solid rgba(255,170,0,.1);
+padding:18px;
+background:rgba(255,255,255,.025);
+border-radius:18px;
+border:1px solid rgba(255,170,0,.12);
+backdrop-filter:blur(10px);
+}
+
+.payment-title{
+font-size:18px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+text-align:center;
+color:#ffcc70;
+margin-bottom:18px;
 }
 
 .payment-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:12px;
+gap:10px;
 }
 
 .payment-card{
-background:#fff;
-border-radius:10px;
-padding:10px;
-border:1px solid rgba(255,170,0,.15);
+background:rgba(255,255,255,.96);
+border-radius:12px;
+padding:8px;
+border:1px solid rgba(255,170,0,.12);
 display:flex;
 align-items:center;
 justify-content:center;
-min-height:65px;
+height:58px;
+transition:.3s;
+}
+
+.payment-card:hover{
+transform:translateY(-2px);
+box-shadow:0 0 12px rgba(255,170,0,.18);
 }
 
 .payment-card amp-img{
+max-width:72%;
+height:auto;
 object-fit:contain;
-max-width:100%;
 }
 
 /* META */
@@ -282,53 +299,8 @@ background:rgba(255,255,255,.03);
 border:1px solid rgba(255,204,112,.12);
 padding:12px 14px;
 border-radius:12px;
-margin:20px 0;
-}
+margin:20px 
 
-/* FAQ + ARTICLE */
-
-.sports-split{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:14px;
-margin-top:14px;
-}
-
-.sports-left,
-.sports-right{
-background:rgba(20,0,0,.75);
-border:1px solid rgba(255,170,0,.2);
-border-radius:16px;
-padding:14px;
-}
-
-.faq-title{
-font-size:14px;
-font-weight:900;
-color:#ffcc70;
-margin-bottom:10px;
-}
-
-.faq-row{
-padding:10px;
-margin-bottom:8px;
-background:rgba(255,255,255,.03);
-border-radius:10px;
-}
-
-.faq-name{
-font-size:12px;
-font-weight:800;
-color:#ffcc70;
-}
-
-.faq-text{
-font-size:12px;
-color:#ffe7c2;
-line-height:1.6;
-}
-
-/* FOOTER */
 
 .footer-bottom{
 margin-top:30px;
@@ -416,7 +388,7 @@ gap:5px;
 font-size:8px;
 }
 
-.sports-split{
+.info-section{
 grid-template-columns:1fr;
 }
 
@@ -618,12 +590,12 @@ METODE PEMBAYARAN
 
 </section>
 
-<section class="sports-split">
+<section class="info-section">
 
-<div class="sports-left">
+<div class="info-box">
 
-<div class="faq-title">
-FAQ PEMAIN
+<div class="info-title">
+TESTIMONI PENGGUNA
 </div>
 
 <div class="faq-row">
@@ -663,29 +635,35 @@ Animasi dan transisi halaman terasa smooth dan profesional.
 
 </div>
 
-<div class="sports-right">
+<div class="info-box">
 
-<h3 class="provider-title">
-ARTICLE
-</h3>
+<div class="info-title">
+PLATFORM HIBURAN DIGITAL MODERN
+</div>
 
-<p style="font-size:12px;color:#ffe7c2;line-height:1.9;text-align:justify;">
+<div class="article-text">
 
-FIFA138 hadir sebagai platform hiburan digital modern dengan desain premium futuristik yang dibuat khusus untuk memberikan pengalaman browsing yang nyaman dan responsif di berbagai perangkat. Dengan kombinasi tampilan elegan, navigasi ringan, dan struktur halaman yang rapi, pengguna dapat menikmati pengalaman akses website yang lebih cepat tanpa hambatan. Semua elemen visual dirancang agar tetap terlihat modern namun tetap ringan ketika dibuka melalui smartphone maupun desktop.
-
-Tampilan utama FIFA138 menggunakan konsep user interface modern dengan dominasi warna gelap yang dipadukan dengan aksen emas premium. Kombinasi ini memberikan kesan eksklusif sekaligus profesional sehingga membuat pengalaman pengguna terasa lebih nyaman saat menjelajahi berbagai fitur yang tersedia. Seluruh menu utama seperti slot, casino, sports, fish, dan bonus juga disusun dengan struktur yang sederhana agar mudah digunakan oleh semua pengguna.
-
-Selain fokus pada desain visual, FIFA138 juga mengutamakan performa website agar tetap ringan dan stabil di berbagai browser modern. Penggunaan struktur AMP membuat loading halaman menjadi lebih cepat sehingga pengguna tidak perlu menunggu lama ketika membuka halaman utama maupun berpindah antar menu. Optimasi ini sangat membantu terutama bagi pengguna mobile yang menginginkan akses cepat dengan penggunaan data yang lebih efisien.
-
-Bagian trending games dibuat dengan tampilan grid modern yang responsif sehingga seluruh game dapat terlihat lebih rapi dan menarik. Pengguna dapat menemukan berbagai game populer dengan tampilan visual yang lebih hidup dan nyaman dilihat. Selain itu, bagian provider game juga ditampilkan dalam desain clean minimalis agar memudahkan pengguna mengenali provider favorit mereka secara cepat.
-
-FIFA138 juga menghadirkan tampilan metode pembayaran yang lebih modern dan kompatibel di berbagai perangkat termasuk Safari iPhone dan browser Android. Seluruh logo pembayaran ditampilkan secara jelas dan proporsional sehingga pengguna dapat melihat pilihan transaksi dengan lebih nyaman. Struktur payment section juga sudah dioptimalkan agar gambar tidak rusak atau hilang ketika diakses melalui mobile device.
-
-Tidak hanya mengutamakan visual premium, FIFA138 juga memperhatikan kenyamanan navigasi secara keseluruhan. Setiap bagian halaman dirancang agar mudah dipahami oleh pengguna baru maupun pengguna lama. Efek hover yang halus, animasi ringan, dan transisi modern membuat pengalaman browsing terasa lebih interaktif tanpa mengurangi performa website.
-
-Dengan perpaduan desain futuristik, performa ringan, tampilan responsif, serta pengalaman pengguna yang nyaman, FIFA138 menjadi salah satu platform hiburan digital modern yang cocok digunakan kapan saja dan di mana saja. Seluruh elemen website dirancang untuk memberikan pengalaman akses yang lebih cepat, stabil, dan menyenangkan di semua perangkat modern saat ini.
-
+<p>
+FIFA138 hadir sebagai platform hiburan digital modern dengan tampilan futuristik, navigasi ringan, dan desain premium yang responsif di berbagai perangkat. Seluruh struktur halaman dibuat agar pengguna dapat menikmati pengalaman browsing yang nyaman baik melalui smartphone maupun desktop.
 </p>
+
+<p>
+Dengan kombinasi warna gelap dan aksen emas elegan, FIFA138 menghadirkan kesan eksklusif namun tetap ringan ketika diakses. Menu utama seperti slot, casino, sports, fish, dan bonus juga dirancang lebih sederhana agar mudah digunakan oleh semua pengguna.
+</p>
+
+<p>
+Teknologi AMP yang digunakan membantu meningkatkan kecepatan loading halaman sehingga akses website terasa lebih stabil dan efisien. Hal ini membuat pengalaman pengguna menjadi lebih cepat tanpa hambatan saat berpindah antar menu.
+</p>
+
+<p>
+Selain mengutamakan performa, FIFA138 juga menampilkan visual game dan provider dengan tampilan grid modern yang rapi. Setiap elemen dirancang agar terlihat clean, profesional, dan nyaman dilihat dalam waktu lama.
+</p>
+
+<p>
+Dengan desain responsif, performa ringan, dan tampilan modern premium, FIFA138 menjadi pilihan hiburan digital yang nyaman digunakan kapan saja di berbagai perangkat modern saat ini.
+</p>
+
+</div>
 
 </div>
 
