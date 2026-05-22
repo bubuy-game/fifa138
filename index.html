@@ -96,24 +96,25 @@ cursor:pointer;
 color:#ffcc70;
 padding:6px 10px;
 border:1px solid rgba(255,204,112,.3);
-border-radius:8px;
+border-radius:10px;
 }
 
 .menu{
 position:absolute;
 right:0;
-top:40px;
+top:42px;
 background:#1a0000;
 border:1px solid rgba(255,204,112,.2);
-border-radius:12px;
-width:160px;
+border-radius:14px;
+width:170px;
 display:none;
 flex-direction:column;
 overflow:hidden;
+z-index:999;
 }
 
 .menu a{
-padding:10px;
+padding:12px;
 font-size:12px;
 color:#fff;
 text-decoration:none;
@@ -131,11 +132,10 @@ margin-top:10px;
 }
 
 .hero-card{
-position:relative;
-border-radius:20px;
+border-radius:22px;
 overflow:hidden;
 border:1px solid rgba(255,170,0,.25);
-box-shadow:0 0 25px rgba(255,100,0,.18);
+box-shadow:0 0 25px rgba(255,120,0,.15);
 }
 
 /* NAVIGATION */
@@ -148,18 +148,18 @@ margin:20px 0;
 }
 
 .nav-item{
-background:linear-gradient(135deg, rgba(255,170,0,0.1), rgba(42,0,0,0.8));
-border:1px solid rgba(255,204,112,0.3);
-border-radius:12px;
+background:linear-gradient(135deg,rgba(255,170,0,.10),rgba(42,0,0,.8));
+border:1px solid rgba(255,204,112,.25);
+border-radius:14px;
 padding:12px 5px;
 text-align:center;
 text-decoration:none;
-transition:0.3s;
+transition:.3s;
 }
 
 .nav-item:hover{
-background:rgba(255,170,0,0.25);
 transform:translateY(-2px);
+background:rgba(255,170,0,.18);
 }
 
 .nav-icon{
@@ -172,27 +172,25 @@ margin-bottom:5px;
 display:block;
 font-size:10px;
 font-weight:700;
-color:#ffcc70;
 font-family:'Orbitron',sans-serif;
+color:#ffcc70;
 }
 
-/* SECTION */
+/* WRAP */
 
 .wrap-box{
-border:1px solid rgba(255,170,0,.2);
+border:1px solid rgba(255,170,0,.15);
 background:rgba(20,0,0,.55);
-border-radius:18px;
-padding:14px;
+border-radius:20px;
+padding:16px;
 }
 
 .trending-title{
-display:block;
 font-size:20px;
 font-weight:900;
 text-align:center;
 color:#ffcc70;
-margin:0 auto 20px;
-padding-bottom:8px;
+margin-bottom:20px;
 font-family:'Orbitron',sans-serif;
 }
 
@@ -200,7 +198,7 @@ font-family:'Orbitron',sans-serif;
 font-size:14px;
 font-weight:800;
 color:#ffcc70;
-margin:10px 0;
+margin:12px 0;
 }
 
 /* GRID */
@@ -209,45 +207,57 @@ margin:10px 0;
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:10px;
-margin-bottom:14px;
+margin-bottom:16px;
 }
 
 .provider-grid-8{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:10px;
-margin-bottom:14px;
 }
 
 .slot-card{
 aspect-ratio:1/1;
-border-radius:10px;
-background:#2a0000;
-border:1px solid rgba(255,170,0,.25);
+border-radius:12px;
 overflow:hidden;
+border:1px solid rgba(255,170,0,.18);
+background:#1a0000;
 }
 
 .provider-card{
 aspect-ratio:7/3;
-border-radius:8px;
-background:linear-gradient(180deg,#1f0000,#0f0000);
-border:1px solid rgba(255,170,0,.2);
+border-radius:10px;
 overflow:hidden;
 display:flex;
 align-items:center;
 justify-content:center;
 padding:6px;
+background:linear-gradient(180deg,#1a0000,#0d0000);
+border:1px solid rgba(255,170,0,.15);
+}
+
+/* META */
+
+.meta-info{
+text-align:center;
+font-size:12px;
+line-height:1.8;
+color:#ffe7c2;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,204,112,.1);
+padding:14px;
+border-radius:16px;
+margin:22px 0;
 }
 
 /* PAYMENT */
 
 .payment-section{
-margin-top:25px;
+margin-top:24px;
 padding:18px;
-background:rgba(255,255,255,.025);
-border-radius:18px;
+background:rgba(255,255,255,.03);
+border-radius:20px;
 border:1px solid rgba(255,170,0,.12);
-backdrop-filter:blur(10px);
 }
 
 .payment-title{
@@ -266,52 +276,96 @@ gap:10px;
 }
 
 .payment-card{
-background:rgba(255,255,255,.96);
-border-radius:12px;
-padding:8px;
-border:1px solid rgba(255,170,0,.12);
+height:58px;
+background:#fff;
+border-radius:14px;
 display:flex;
 align-items:center;
 justify-content:center;
-height:58px;
-transition:.3s;
-}
-
-.payment-card:hover{
-transform:translateY(-2px);
-box-shadow:0 0 12px rgba(255,170,0,.18);
+padding:8px;
+border:1px solid rgba(255,170,0,.10);
 }
 
 .payment-card amp-img{
-max-width:72%;
+max-width:70%;
 height:auto;
 object-fit:contain;
 }
 
-/* META */
+/* INFO SECTION */
 
-.meta-info{
-text-align:center;
+.info-section{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:18px;
+margin-top:24px;
+}
+
+.info-box{
+background:rgba(20,0,0,.72);
+border:1px solid rgba(255,170,0,.15);
+border-radius:20px;
+padding:18px;
+}
+
+.info-title{
+font-size:18px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+color:#ffcc70;
+margin-bottom:16px;
+padding-bottom:10px;
+border-bottom:1px solid rgba(255,204,112,.10);
+}
+
+/* FAQ */
+
+.faq-row{
+padding:14px;
+border-radius:14px;
+background:rgba(255,255,255,.03);
+margin-bottom:12px;
+border:1px solid rgba(255,255,255,.04);
+}
+
+.faq-name{
+font-size:13px;
+font-weight:700;
+color:#ffcc70;
+margin-bottom:5px;
+}
+
+.faq-text{
 font-size:12px;
 line-height:1.7;
 color:#ffe7c2;
-background:rgba(255,255,255,.03);
-border:1px solid rgba(255,204,112,.12);
-padding:12px 14px;
-border-radius:12px;
-margin:20px 
+}
 
+/* ARTICLE */
+
+.article-text{
+font-size:13px;
+line-height:2;
+color:#ffe7c2;
+text-align:justify;
+}
+
+.article-text p{
+margin-bottom:16px;
+}
+
+/* FOOTER */
 
 .footer-bottom{
 margin-top:30px;
 padding:20px 0;
 text-align:center;
-border-top:1px solid rgba(255,204,112,.1);
+border-top:1px solid rgba(255,204,112,.08);
 }
 
 .footer-bottom p{
-font-family:'Orbitron',sans-serif;
 font-size:11px;
+font-family:'Orbitron',sans-serif;
 color:#ffcc70;
 }
 
@@ -325,12 +379,12 @@ transform:translateX(-50%);
 width:calc(100% - 24px);
 max-width:1200px;
 height:70px;
-background:rgba(15,0,0,.92);
+background:rgba(15,0,0,.94);
 display:flex;
 align-items:center;
 justify-content:space-between;
 padding:0 18px;
-border-radius:22px 22px 0 0;
+border-radius:24px 24px 0 0;
 z-index:999;
 }
 
@@ -361,19 +415,19 @@ left:50%;
 transform:translateX(-50%) translateY(-18px);
 width:66px;
 height:66px;
-background:linear-gradient(180deg,#ffcc70,#b8860b);
 border-radius:50%;
+background:linear-gradient(180deg,#ffcc70,#c58a00);
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
 text-decoration:none;
 color:#120000;
+font-weight:900;
 }
 
 .nav-center span{
 font-size:9px;
-font-weight:900;
 }
 
 /* MOBILE */
@@ -381,23 +435,48 @@ font-weight:900;
 @media(max-width:768px){
 
 .game-nav{
-gap:5px;
+gap:6px;
 }
 
 .nav-label{
 font-size:8px;
 }
 
-.info-section{
-grid-template-columns:1fr;
-}
-
-.payment-grid{
+.slot-grid-8{
 grid-template-columns:repeat(2,1fr);
 }
 
+.provider-grid-8{
+grid-template-columns:repeat(2,1fr);
 }
 
+.payment-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.info-section{
+grid-template-columns:1fr;
+gap:14px;
+}
+
+.payment-card{
+height:54px;
+}
+
+.payment-card amp-img{
+max-width:65%;
+}
+
+.info-title{
+font-size:16px;
+}
+
+.article-text{
+font-size:12px;
+line-height:1.9;
+}
+
+}
 </style>
 </head>
 
@@ -552,8 +631,8 @@ FIFA138 menghadirkan pengalaman hiburan digital modern dengan tampilan premium, 
 
 <section class="payment-section">
 
-<div class="provider-title">
-METODE PEMBAYARAN
+<div class="payment-title">
+METODE PEMBAYARAN DIGITAL
 </div>
 
 <div class="payment-grid">
