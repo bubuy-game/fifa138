@@ -48,29 +48,45 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 .trending-title { display: block; font-size: 20px; font-weight: 900; text-align: center; color: #ffcc70; margin: 0 auto 20px; border-bottom: 2px solid rgba(255, 204, 112, 0.5); padding-bottom: 8px; width: fit-content; font-family: 'Orbitron', sans-serif; letter-spacing: 1px; }
 .wrap-box{ border:1px solid rgba(255,170,0,.2); background:rgba(20,0,0,.55); border-radius:18px; padding:14px; }
 .provider-title{ font-size:14px; font-weight:800; color:#ffcc70; margin:10px 0; }
-.slot-grid-8{ display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-bottom:14px; }
 
-/* BAGIAN REFINED: Mengatur Kotak Logo Game & Provider Agar Premium */
+/* GRID UNTUK GAME & PROVIDER */
+.slot-grid-8{ display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-bottom:14px; }
+.provider-grid-8 { display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-bottom:14px; }
+
+/* Kotak untuk HOT GAMES (Rasio 1:1 Sempurna) */
 .slot-card { 
     aspect-ratio: 1/1; 
-    border-radius: 12px; 
-    background: linear-gradient(180deg, #1f0000, #0f0000); 
+    border-radius: 10px; 
+    background: #2a0000; 
     border: 1px solid rgba(255,170,0,.25); 
+    overflow: hidden; 
+    transition: 0.3s ease;
+}
+.slot-card:hover {
+    border-color: #ffcc70;
+    transform: translateY(-2px);
+}
+
+/* Kotak Khusus PROVIDER GAME (Rasio Persegi Panjang agar tidak Raksasa) */
+.provider-card { 
+    aspect-ratio: 7/3; 
+    border-radius: 8px; 
+    background: linear-gradient(180deg, #1f0000, #0f0000); 
+    border: 1px solid rgba(255,170,0,.2); 
     overflow: hidden; 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px; /* Jarak aman di dalam kotak agar gambar tidak menempel garis */
-    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.7);
+    padding: 6px; 
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
 }
-.slot-card:hover {
+.provider-card:hover {
     border-color: #ffcc70;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255, 204, 112, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 204, 112, 0.2);
 }
-/* Menjaga rasio gambar di dalam kotak agar mengecil pas di tengah */
-.slot-card amp-img {
+.provider-card amp-img {
     width: 100%;
     height: 100%;
     max-width: 85%;
@@ -89,6 +105,7 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 @media(max-width:768px){
 .sports-split{grid-template-columns:1fr;}
 .slot-grid-8{grid-template-columns:repeat(4,1fr);}
+.provider-grid-8{grid-template-columns:repeat(4,1fr);}
 .game-nav { gap: 5px; }
 .nav-label { font-size: 8px; }
 }
@@ -158,108 +175,4 @@ body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#12000
 <div class="hero-overlay"></div>
 <div class="hero-text"></div>
 </div>
-</section>
-
-<nav class="game-nav">
-<a href="#" class="nav-item"><span class="nav-icon">🎰</span><span class="nav-label">Slot</span></a>
-<a href="#" class="nav-item"><span class="nav-icon">🃏</span><span class="nav-label">Casino</span></a>
-<a href="#" class="nav-item"><span class="nav-icon">⚽</span><span class="nav-label">Sports</span></a>
-<a href="#" class="nav-item"><span class="nav-icon">🐟</span><span class="nav-label">Fish</span></a>
-<a href="#" class="nav-item"><span class="nav-icon">🎁</span><span class="nav-label">Bonus</span></a>
-</nav>
-
-<section style="margin-top: 25px;">
-    <div class="wrap-box">
-        <h1 class="trending-title">TRENDING GAMES SLOT</h1>
-        
-        <div class="provider-title">Hot Games</div>
-        <div class="slot-grid-8">
-            <div class="slot-card"><amp-img src="asset/Aztec%20Gems.jpg" width="100" height="100" layout="responsive" alt="Aztec Gems"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/Fortune%20Tiger.jpg" width="100" height="100" layout="responsive" alt="Fortune Tiger"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/Gates%20of%20Gatot%20Kaca.jpg" width="100" height="100" layout="responsive" alt="Gates of Gatot Kaca"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/Gem%20Saviour%20Conquest.jpg" width="100" height="100" layout="responsive" alt="Gem Saviour Conquest"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/Lucky%20Neko.jpg" width="100" height="100" layout="responsive" alt="Lucky Neko"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/koi-gate.jpg" width="100" height="100" layout="responsive" alt="Koi Gate"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/mahjongways2.jpg" width="100" height="100" layout="responsive" alt="Mahjong Ways 2"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/muscle-fortune.jpg" width="100" height="100" layout="responsive" alt="Muscle Fortune"></amp-img></div>
-        </div>
-
-        <div class="provider-title">Provider Game</div>
-        <div class="slot-grid-8">
-            <div class="slot-card"><amp-img src="asset/jili-active.webp" width="100" height="100" layout="responsive" alt="Jili"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/no-limit-city-active.webp" width="100" height="100" layout="responsive" alt="No Limit City"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/pgsoft-active.webp" width="100" height="100" layout="responsive" alt="PG Soft"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/playngo-active.webp" width="100" height="100" layout="responsive" alt="Play n Go"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/playtech-active.webp" width="100" height="100" layout="responsive" alt="Playtech"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/pp-active.webp" width="100" height="100" layout="responsive" alt="Pragmatic Play"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/slot88-active.webp" width="100" height="100" layout="responsive" alt="Slot88"></amp-img></div>
-            <div class="slot-card"><amp-img src="asset/spade-gaming-active.webp" width="100" height="100" layout="responsive" alt="Spadegaming"></amp-img></div>
-        </div>
-    </div>
-</section>
-
-<div class="meta-info">
-FIFA138 | Website Main Game Generasi Modern Jalur Resmi Alur Game Kekinian
-</div>
-
-<section class="payment-section">
-    <div class="provider-title">METODE PEMBAYARAN</div>
-    <div class="payment-grid">
-        <div class="payment-card"><amp-img src="asset/bank-bca.jpg" width="100" height="50" layout="responsive" alt="BCA"></amp-img></div>
-        <div class="payment-card"><amp-img src="asset/bank-mandiri.jpg" width="100" height="50" layout="responsive" alt="Mandiri"></amp-img></div>
-        <div class="payment-card"><amp-img src="asset/bank-bri.jpg" width="100" height="50" layout="responsive" alt="BRI"></amp-img></div>
-        <div class="payment-card"><amp-img src="asset/bank-bni.jpg" width="100" height="50" layout="responsive" alt="BNI"></amp-img></div>
-        <div class="payment-card"><amp-img src="asset/dana.jpg" width="100" height="50" layout="responsive" alt="DANA"></amp-img></div>
-        <div class="payment-card"><amp-img src="asset/ovo.jpg" width="100" height="50" layout="responsive" alt="OVO"></amp-img></div>
-        <div class="payment-card"><amp-img src="asset/gopay.jpg" width="100" height="50" layout="responsive" alt="GOPAY"></amp-img></div>
-        <div class="payment-card"><amp-img src="asset/qris.jpg" width="100" height="50" layout="responsive" alt="QRIS"></amp-img></div>
-    </div>
-</section>
-
-<section class="sports-split">
-<div class="sports-left">
-<div class="faq-title">FAQ PEMAIN</div>
-<div class="faq-row"><div class="faq-name">Andi</div><div class="faq-text">UI sangat smooth.</div></div>
-<div class="faq-row"><div class="faq-name">Budi</div><div class="faq-text">Update cepat.</div></div>
-<div class="faq-row"><div class="faq-name">Rizky</div><div class="faq-text">Navigasi mudah.</div></div>
-<div class="faq-row"><div class="faq-name">Roni</div><div class="faq-text">Situs sangat ringan diakses.</div></div>
-<div class="faq-row"><div class="faq-name">Siti</div><div class="faq-text">Sangat responsif untuk mobile.</div></div>
-<div class="faq-row"><div class="faq-name">Agus</div><div class="faq-text">Desain elegan dan premium.</div></div>
-</div>
-
-<div class="sports-right">
-<h3 class="provider-title">ARTICLE</h3>
-<p style="font-size:12px;color:#ffe7c2;line-height:1.6;">
-FIFA138 menghadirkan UI modern dengan sistem informasi cepat, ringan, dan mudah digunakan di semua perangkat. Nikmati navigasi lancar tanpa kendala.
-</p>
-</div>
-</section>
-
-<footer class="footer-bottom">
-    <p>&copy; COPYRIGHT FIFA138 | 18+ | BY SUPPORT</p>
-</footer>
-
-<div class="bottom-nav">
-    <div class="bottom-left">
-        <a href="#" class="nav-btn">
-            <amp-img src="asset/telegram.png" width="20" height="20" layout="fixed"></amp-img>
-            <span>Telegram</span>
-        </a>
-    </div>
-
-    <a href="#" class="nav-center">
-        <amp-img src="asset/daftar.png" width="28" height="28" layout="fixed"></amp-img>
-        <span>DAFTAR</span>
-    </a>
-
-    <div class="bottom-right">
-        <a href="#" class="nav-btn">
-            <amp-img src="asset/chat.png" width="20" height="20" layout="fixed"></amp-img>
-            <span>Live Chat</span>
-        </a>
-    </div>
-</div>
-
-</div>
-</body>
-</html>
+</section
