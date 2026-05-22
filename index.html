@@ -1,0 +1,690 @@
+<!doctype html>
+<html ⚡ lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<title>FIFA138 | Website Main Game Generasi Modern Jalur Resmi</title>
+
+<meta name="description" content="FIFA138 merupakan website game modern dengan tampilan premium futuristik, akses cepat, navigasi ringan, dan pengalaman hiburan digital modern untuk semua perangkat.">
+
+<link rel="canonical" href="https://bubuy-game.github.io/fifa138/">
+
+<meta name="robots" content="index, follow">
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"name":"FIFA138",
+"url":"https://bubuy-game.github.io/fifa138/",
+"description":"FIFA138 merupakan website game modern dengan tampilan premium futuristik, akses cepat, navigasi ringan, dan pengalaman hiburan digital modern untuk semua perangkat.",
+"potentialAction":{
+"@type":"SearchAction",
+"target":"https://bubuy-game.github.io/fifa138/?q={search_term_string}",
+"query-input":"required name=search_term_string"
+}
+}
+</script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style amp-boilerplate>
+body{
+-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+animation:-amp-start 8s steps(1,end) 0s 1 normal both
+}
+@-webkit-keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+@keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+</style>
+
+<noscript>
+<style amp-boilerplate>
+body{
+-webkit-animation:none;
+-moz-animation:none;
+-ms-animation:none;
+animation:none
+}
+</style>
+</noscript>
+
+<style amp-custom>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#120000,#060000);
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 16px 100px;
+}
+
+/* HEADER */
+
+.appbar{
+position:sticky;
+top:0;
+z-index:999;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 16px;
+background:rgba(20,0,0,.75);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,170,0,.2);
+}
+
+.brand{
+display:flex;
+align-items:center;
+}
+
+.menu-wrap{
+position:relative;
+}
+
+.menu-btn{
+font-size:22px;
+cursor:pointer;
+color:#ffcc70;
+padding:6px 10px;
+border:1px solid rgba(255,204,112,.3);
+border-radius:10px;
+}
+
+.menu{
+position:absolute;
+right:0;
+top:42px;
+background:#1a0000;
+border:1px solid rgba(255,204,112,.2);
+border-radius:14px;
+width:170px;
+display:none;
+flex-direction:column;
+overflow:hidden;
+z-index:999;
+}
+
+.menu a{
+padding:12px;
+font-size:12px;
+color:#fff;
+text-decoration:none;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.menu-wrap:hover .menu{
+display:flex;
+}
+
+/* HERO */
+
+.hero{
+margin-top:10px;
+}
+
+.hero-card{
+border-radius:22px;
+overflow:hidden;
+border:1px solid rgba(255,170,0,.25);
+box-shadow:0 0 25px rgba(255,120,0,.15);
+}
+
+/* NAVIGATION */
+
+.game-nav{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.nav-item{
+background:linear-gradient(135deg,rgba(255,170,0,.10),rgba(42,0,0,.8));
+border:1px solid rgba(255,204,112,.25);
+border-radius:14px;
+padding:12px 5px;
+text-align:center;
+text-decoration:none;
+transition:.3s;
+}
+
+.nav-item:hover{
+transform:translateY(-2px);
+background:rgba(255,170,0,.18);
+}
+
+.nav-icon{
+display:block;
+font-size:20px;
+margin-bottom:5px;
+}
+
+.nav-label{
+display:block;
+font-size:10px;
+font-weight:700;
+font-family:'Orbitron',sans-serif;
+color:#ffcc70;
+}
+
+/* WRAP */
+
+.wrap-box{
+border:1px solid rgba(255,170,0,.15);
+background:rgba(20,0,0,.55);
+border-radius:20px;
+padding:16px;
+}
+
+.trending-title{
+font-size:20px;
+font-weight:900;
+text-align:center;
+color:#ffcc70;
+margin-bottom:20px;
+font-family:'Orbitron',sans-serif;
+}
+
+.provider-title{
+font-size:14px;
+font-weight:800;
+color:#ffcc70;
+margin:12px 0;
+}
+
+/* GRID */
+
+.slot-grid-8{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-bottom:16px;
+}
+
+.provider-grid-8{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:8px;
+margin-bottom:14px;
+}
+
+.provider-card{
+aspect-ratio:7/3;
+border-radius:10px;
+background:linear-gradient(180deg,#1a0000,#0d0000);
+border:1px solid rgba(255,170,0,.15);
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:6px;
+}
+
+.provider-card amp-img{
+max-width:78%;
+height:auto;
+object-fit:contain;
+}
+
+.slot-card{
+aspect-ratio:1/1;
+border-radius:12px;
+overflow:hidden;
+border:1px solid rgba(255,170,0,.18);
+background:#1a0000;
+}
+
+/* META */
+
+.meta-info{
+text-align:center;
+font-size:12px;
+line-height:1.8;
+color:#ffe7c2;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,204,112,.1);
+padding:14px;
+border-radius:16px;
+margin:22px 0;
+}
+
+/* PAYMENT */
+
+.payment-section{
+margin-top:24px;
+padding:18px;
+background:rgba(255,255,255,.03);
+border-radius:20px;
+border:1px solid rgba(255,170,0,.12);
+}
+
+.payment-title{
+font-size:18px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+text-align:center;
+color:#ffcc70;
+margin-bottom:18px;
+}
+
+.payment-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+.payment-card{
+height:58px;
+background:#fff;
+border-radius:14px;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:8px;
+border:1px solid rgba(255,170,0,.10);
+}
+
+.payment-card amp-img{
+max-width:70%;
+height:auto;
+object-fit:contain;
+}
+
+/* INFO SECTION */
+
+.info-section{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:18px;
+margin-top:24px;
+}
+
+.info-box{
+background:rgba(20,0,0,.72);
+border:1px solid rgba(255,170,0,.15);
+border-radius:20px;
+padding:18px;
+}
+
+.info-title{
+font-size:18px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+color:#ffcc70;
+margin-bottom:16px;
+padding-bottom:10px;
+border-bottom:1px solid rgba(255,204,112,.10);
+}
+
+/* FAQ */
+
+.faq-row{
+padding:14px;
+border-radius:14px;
+background:rgba(255,255,255,.03);
+margin-bottom:12px;
+border:1px solid rgba(255,255,255,.04);
+}
+
+.faq-name{
+font-size:13px;
+font-weight:700;
+color:#ffcc70;
+margin-bottom:5px;
+}
+
+.faq-text{
+font-size:12px;
+line-height:1.7;
+color:#ffe7c2;
+}
+
+/* ARTICLE */
+
+.article-text{
+font-size:13px;
+line-height:2;
+color:#ffe7c2;
+text-align:justify;
+}
+
+.article-text p{
+margin-bottom:16px;
+}
+
+/* FOOTER */
+
+.footer-bottom{
+margin-top:30px;
+padding:20px 0;
+text-align:center;
+border-top:1px solid rgba(255,204,112,.08);
+}
+
+.footer-bottom p{
+font-size:11px;
+font-family:'Orbitron',sans-serif;
+color:#ffcc70;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:calc(100% - 24px);
+max-width:1200px;
+height:70px;
+background:rgba(15,0,0,.94);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 18px;
+border-radius:24px 24px 0 0;
+z-index:999;
+}
+
+.bottom-left,
+.bottom-right{
+width:80px;
+display:flex;
+justify-content:center;
+}
+
+.nav-btn{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-decoration:none;
+color:#ffcc70;
+gap:3px;
+}
+
+.nav-btn span{
+font-size:9px;
+font-family:'Orbitron',sans-serif;
+}
+
+.nav-center{
+position:absolute;
+left:50%;
+transform:translateX(-50%) translateY(-18px);
+width:66px;
+height:66px;
+border-radius:50%;
+background:linear-gradient(180deg,#ffcc70,#c58a00);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+color:#120000;
+font-weight:900;
+}
+
+.nav-center span{
+font-size:9px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.game-nav{
+gap:6px;
+}
+
+.nav-label{
+font-size:8px;
+}
+
+.slot-grid-8{
+grid-template-columns:repeat(2,1fr);
+}
+
+.provider-grid-8{
+grid-template-columns:repeat(4,1fr);
+gap:6px;
+}
+
+.provider-card{
+padding:4px;
+border-radius:8px;
+}
+
+.provider-card amp-img{
+max-width:75%;
+}
+
+.payment-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.info-section{
+grid-template-columns:1fr;
+gap:14px;
+}
+
+.payment-card{
+height:54px;
+}
+
+.payment-card amp-img{
+max-width:65%;
+}
+
+.info-title{
+font-size:16px;
+}
+
+.article-text{
+font-size:12px;
+line-height:1.9;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="appbar">
+
+<div class="brand">
+<amp-img src="asset/logo.png"
+width="120"
+height="32"
+layout="intrinsic"
+alt="Logo FIFA138">
+</amp-img>
+</div>
+
+<div class="menu-wrap">
+
+<div class="menu-btn">☰</div>
+
+<div class="menu">
+<a href="https://linkly.link/2F9LL">Daftar VIP</a>
+<a href="https://linkly.link/2F9LL">Member Login</a>
+<a href="https://linkly.link/2F9LL">Game</a>
+<a href="https://linkly.link/2F9LL">Promosi</a>
+</div>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-card">
+
+<amp-img
+src="asset/fifa138-banner.png"
+width="1200"
+height="700"
+layout="responsive"
+alt="FIFA138 Banner">
+</amp-img>
+
+</div>
+</section>
+
+<nav class="game-nav">
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🎰</span>
+<span class="nav-label">Slot</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🃏</span>
+<span class="nav-label">Casino</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">⚽</span>
+<span class="nav-label">Sports</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🐟</span>
+<span class="nav-label">Fish</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🎁</span>
+<span class="nav-label">Bonus</span>
+</a>
+
+</nav>
+
+<section style="margin-top:25px;">
+
+<div class="wrap-box">
+
+<h1 class="trending-title">
+TRENDING GAMES SLOT
+</h1>
+
+<div class="provider-title">Hot Games</div>
+
+<div class="slot-grid-8">
+
+<div class="slot-card">
+<amp-img src="asset/Aztec Gems.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Fortune Tiger.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Gates of Gatot Kaca.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Gem Saviour Conquest.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Lucky Neko.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/koi-gate.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/mahjongways2.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/muscle-fortune.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+</div>
+
+<div class="provider-title">Provider Game</div>
+
+<div class="provider-grid-8">
+
+<div class="provider-card">
+<amp-img src="asset/jili-active.webp" width="120" height="60" layout="intrinsic" alt="JILI"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/pgsoft-active.webp" width="120" height="60" layout="intrinsic" alt="PGSOFT"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/playngo-active.webp" width="120" height="60" layout="intrinsic" alt="PLAYNGO"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/playtech-active.webp" width="120" height="60" layout="intrinsic" alt="PLAYTECH"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/habanero-active.webp" width="120" height="60" layout="intrinsic" alt="HABANERO"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/spadegaming-active.webp" width="120" height="60" layout="intrinsic" alt="SPADE GAMING"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/pragmatic-active.webp" width="120" height="60" layout="intrinsic" alt="PRAGMATIC"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/cq9-active.webp" width="120" height="60" layout="intrinsic" alt="CQ9"></amp-img>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="meta-info">
+FIFA138 menghadirkan pengalaman hiburan digital modern dengan tampilan premium, navigasi ringan, dan desain futuristik yang nyaman di semua perangkat.
+</div>
+
+<footer class="footer-bottom">
+<p>
+© COPYRIGHT FIFA138 | 18+ | SUPPORT SYSTEM
+</p>
+</footer>
+
+</div>
+
+</body>
+</html>
