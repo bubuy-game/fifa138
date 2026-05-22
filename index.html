@@ -1,70 +1,26 @@
 <!doctype html>
 <html ⚡ lang="id">
 <head>
-
 <meta charset="utf-8">
-<meta name="viewport"
-content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-<meta name="description"
-content="Testing6 menghadirkan UI modern dengan sistem cepat, ringan, dan responsif untuk semua perangkat.">
+<title>Raja Padi 4D - Platform Visual Game Modern & Responsif</title>
+<meta name="description" content="Raja Padi 4D menghadirkan UI modern dengan sistem cepat, ringan, dan responsif untuk semua perangkat.">
+<link rel="canonical" href="https://domainkamu.com/">
 
-<link rel="canonical"
-href="https://domainkamu.com/">
-
-<script async
-src="https://cdn.ampproject.org/v0.js"></script>
-
+<script async src="https://cdn.ampproject.org/v0.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-
 <style amp-boilerplate>
-body{
--webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
--moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
--ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-animation:-amp-start 8s steps(1,end) 0s 1 normal both
-}
-
-@-webkit-keyframes -amp-start{
-from{visibility:hidden}
-to{visibility:visible}
-}
-
-@-moz-keyframes -amp-start{
-from{visibility:hidden}
-to{visibility:visible}
-}
-
-@-ms-keyframes -amp-start{
-from{visibility:hidden}
-to{visibility:visible}
-}
-
-@-o-keyframes -amp-start{
-from{visibility:hidden}
-to{visibility:visible}
-}
-
-@keyframes -amp-start{
-from{visibility:hidden}
-to{visibility:visible}
-}
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
 </style>
-
 <noscript>
 <style amp-boilerplate>
-body{
--webkit-animation:none;
--moz-animation:none;
--ms-animation:none;
-animation:none
-}
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
 </style>
 </noscript>
 
 <style amp-custom>
-
 /* GLOBAL */
 *{
 margin:0;
@@ -101,8 +57,9 @@ backdrop-filter:blur(18px);
 border-bottom:1px solid rgba(255,170,0,.2);
 }
 
-.brand img{
-height:32px;
+.brand {
+display: flex;
+align-items: center;
 }
 
 .menu-wrap{
@@ -147,7 +104,7 @@ background:rgba(255,204,112,.1);
 display:flex;
 }
 
-/* ================= GAME NAVIGATION (NEW) ================= */
+/* ================= GAME NAVIGATION ================= */
 .game-nav {
 display: grid;
 grid-template-columns: repeat(5, 1fr);
@@ -189,15 +146,15 @@ font-family: 'Orbitron', sans-serif;
 
 /* ================= HERO & CONTENT ================= */
 .trending-title {
-    display: block; /* Mengubah dari inline-block ke block agar bisa diketengah */
-    font-size: 20px; /* Ukuran disesuaikan agar pas di dalam box */
+    display: block;
+    font-size: 20px;
     font-weight: 900;
     text-align: center;
     color: #ffcc70;
-    margin: 0 auto 20px; /* Center alignment */
-    border-bottom: 2px solid rgba(255, 204, 112, 0.5); /* Garis bawah gold */
+    margin: 0 auto 20px;
+    border-bottom: 2px solid rgba(255, 204, 112, 0.5);
     padding-bottom: 8px;
-    width: fit-content; /* Lebar mengikuti teks */
+    width: fit-content;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
 }
@@ -228,6 +185,7 @@ aspect-ratio:1/1;
 border-radius:10px;
 background:#2a0000;
 border:1px solid rgba(255,170,0,.25);
+overflow: hidden;
 }
 
 .sports-split{
@@ -236,7 +194,6 @@ grid-template-columns:1fr 1fr;
 gap:14px;
 margin-top:14px;
 }
-
 
 .sports-left{
 background:rgba(30,0,0,.65);
@@ -280,14 +237,13 @@ padding:14px;
 /* RESPONSIVE */
 @media(max-width:768px){
 .sports-split{grid-template-columns:1fr;}
-.slot-grid-8{grid-template-columns:repeat(3,1fr);}
+.slot-grid-8{grid-template-columns:repeat(4,1fr);}
 .game-nav { gap: 5px; }
 .nav-label { font-size: 8px; }
 }
 
-
 .hero{
-margin-top:10px; /* Angka 10px akan membuat banner naik ke atas mendekati logo */
+margin-top:10px;
 }
 
 .hero-card{
@@ -312,55 +268,43 @@ z-index:2;
 color:#fff;
 }
 
-.hero-text h1{
-font-size:24px;
-font-weight:800;
-}
-
-.hero-text p{
-font-size:12px;
-opacity:.8;
-}
 /* Container Metode Pembayaran */
 .payment-section {
     margin-top: 25px;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.03); /* Sedikit lebih terang dari background utama */
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 15px;
     border: 1px solid rgba(255, 170, 0, 0.1);
 }
 
-/* Grid Khusus Pembayaran */
 .payment-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* Tetap 8 kolom sesuai request */
+    grid-template-columns: repeat(8, 1fr);
     gap: 12px;
 }
 
-/* Kartu Pembayaran */
 .payment-card {
-    background: #fff; /* Latar putih agar logo bank terlihat jelas */
+    background: #fff;
     padding: 8px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: grayscale(100%); /* Efek elegan hitam putih */
+    filter: grayscale(100%);
     transition: 0.4s ease;
     border: 1px solid transparent;
 }
 
 .payment-card:hover {
-    filter: grayscale(0%); /* Warna muncul saat di-hover */
+    filter: grayscale(0%);
     transform: translateY(-3px);
     border-color: #ffcc70;
     box-shadow: 0 5px 15px rgba(255, 204, 112, 0.2);
 }
 
-/* Responsive untuk HP */
 @media (max-width: 768px) {
     .payment-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 kolom di HP agar tidak terlalu kecil */
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -372,7 +316,7 @@ opacity:.8;
 }
 
 .footer-bottom p {
-    font-family: 'Orbitron', sans-serif; /* Menggunakan font gaming agar serasi */
+    font-family: 'Orbitron', sans-serif;
     font-size: 11px;
     color: #ffcc70;
     letter-spacing: 2px;
@@ -385,28 +329,21 @@ opacity:.8;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-
     width: calc(100% - 24px);
     max-width: 1200px;
-
     height: 70px;
     background: rgba(15, 0, 0, 0.92);
     backdrop-filter: blur(14px);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 18px;
-
     border: 1px solid rgba(255, 204, 112, 0.18);
     border-bottom: none;
     border-radius: 22px 22px 0 0;
-
     z-index: 999;
 }
 
-/* LEFT & RIGHT AREA */
 .bottom-left,
 .bottom-right {
     width: 80px;
@@ -414,7 +351,6 @@ opacity:.8;
     justify-content: center;
 }
 
-/* BUTTON STYLE */
 .nav-btn {
     display: flex;
     flex-direction: column;
@@ -430,27 +366,21 @@ opacity:.8;
     font-weight: 700;
 }
 
-/* CENTER BUTTON (FLOATING) */
 .nav-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%) translateY(-18px);
-
     width: 66px;
     height: 66px;
-
     background: linear-gradient(180deg, #ffcc70, #b8860b);
     border-radius: 50%;
     border: 4px solid #120000;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
     color: #120000;
-
     box-shadow: 0 6px 18px rgba(255, 170, 0, 0.35);
 }
 
@@ -458,47 +388,6 @@ opacity:.8;
     font-size: 9px;
     font-weight: 900;
     margin-top: 2px;
-}
-.provider-footer {
-    margin-top: 25px;
-    padding: 15px;
-    background: rgba(20, 0, 0, 0.6);
-    border: 1px solid rgba(255, 204, 112, 0.15);
-    border-radius: 16px;
-}
-
-.provider-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.provider-box {
-    background: rgba(255, 204, 112, 0.08);
-    border: 1px solid rgba(255, 204, 112, 0.2);
-    border-radius: 10px;
-
-    padding: 10px;
-    text-align: center;
-
-    font-size: 11px;
-    font-weight: 700;
-    color: #ffcc70;
-
-    transition: 0.3s;
-}
-
-.provider-box:hover {
-    background: rgba(255, 204, 112, 0.18);
-    transform: translateY(-3px);
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .provider-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .meta-info{
@@ -510,19 +399,17 @@ background:rgba(255,255,255,.03);
 border:1px solid rgba(255,204,112,.12);
 padding:12px 14px;
 border-radius:12px;
-margin:-5px 0 20px;
+margin: 20px 0;
 }
-
 </style>
 </head>
 <body>
 
 <div class="container">
 
-<!-- HEADER -->
 <header class="appbar">
 <div class="brand">
-<img src="logo.png" alt="logo">
+    <amp-img src="logo.png" width="120" height="32" layout="intrinsic" alt="Logo"></amp-img>
 </div>
 
 <div class="menu-wrap">
@@ -545,14 +432,11 @@ height="700"
 layout="responsive"
 alt="hero banner">
 </amp-img>
-
 <div class="hero-overlay"></div>
-<div class="hero-text">
-</div>
+<div class="hero-text"></div>
 </div>
 </section>
 
-<!-- GAME CATEGORY NAVIGATION (PENAMBAHAN DISINI) -->
 <nav class="game-nav">
 <a href="#" class="nav-item">
 <span class="nav-icon">🎰</span>
@@ -576,35 +460,75 @@ alt="hero banner">
 </a>
 </nav>
 
-<!-- SLOT GAMES SECTION -->
 <section style="margin-top: 25px;">
     <div class="wrap-box">
-        <!-- Judul dipindah ke dalam sini agar sesuai tanda panah di teruskangemnini.png -->
         <h1 class="trending-title">TRENDING GAMES SLOT</h1>
+        
         <div class="provider-title">Hot Games</div>
         <div class="slot-grid-8">
-            <div class="Aztec Gems.jpg"></div><div class="Fortune Tiger.jpg"></div><div class="Gates of Gatot Kaca.jpg"></div><div class="Gem Saviour Conquest.jpg"></div>
-            <div class="Lucky Neko.jpg"></div><div class="koi-gate.jpg"></div><div class="mahjongways2.jpg"></div><div class="muscle-fortune.jpg"></div>
+            <div class="slot-card">
+                <amp-img src="Aztec%20Gems.jpg" width="100" height="100" layout="responsive" alt="Aztec Gems"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="Fortune%20Tiger.jpg" width="100" height="100" layout="responsive" alt="Fortune Tiger"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="Gates%20of%20Gatot%20Kaca.jpg" width="100" height="100" layout="responsive" alt="Gates of Gatot Kaca"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="Gem%20Saviour%20Conquest.jpg" width="100" height="100" layout="responsive" alt="Gem Saviour Conquest"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="Lucky%20Neko.jpg" width="100" height="100" layout="responsive" alt="Lucky Neko"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="koi-gate.jpg" width="100" height="100" layout="responsive" alt="Koi Gate"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="mahjongways2.jpg" width="100" height="100" layout="responsive" alt="Mahjong Ways 2"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="muscle-fortune.jpg" width="100" height="100" layout="responsive" alt="Muscle Fortune"></amp-img>
+            </div>
         </div>
 
         <div class="provider-title">Provider Game</div>
         <div class="slot-grid-8">
-            <div class="jili-active.webp"></div><div class="no-limit-city-active.webp"></div><div class="pgsoft-active.webp"></div><div class="playngo-active.webp"></div>
-            <div class="playtech-active.webp"></div><div class="pp-active.webp"></div><div class="slot88-active.webp"></div><div class="spade-gaming-active.webp"></div>
+            <div class="slot-card">
+                <amp-img src="jili-active.webp" width="100" height="100" layout="responsive" alt="Jili"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="no-limit-city-active.webp" width="100" height="100" layout="responsive" alt="No Limit City"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="pgsoft-active.webp" width="100" height="100" layout="responsive" alt="PG Soft"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="playngo-active.webp" width="100" height="100" layout="responsive" alt="Play n Go"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="playtech-active.webp" width="100" height="100" layout="responsive" alt="Playtech"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="pp-active.webp" width="100" height="100" layout="responsive" alt="Pragmatic Play"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="slot88-active.webp" width="100" height="100" layout="responsive" alt="Slot88"></amp-img>
+            </div>
+            <div class="slot-card">
+                <amp-img src="spade-gaming-active.webp" width="100" height="100" layout="responsive" alt="Spadegaming"></amp-img>
+            </div>
         </div>
     </div>
 </section>
 
-
-<h1 class="trending-title"></h1>
 <div class="meta-info">
-Testing6 menghadirkan tampilan modern dengan navigasi cepat, ringan, dan responsif untuk pengalaman visual premium di semua perangkat.
+Raja Padi 4D menghadirkan tampilan modern dengan navigasi cepat, ringan, dan responsif untuk pengalaman visual premium di semua perangkat.
 </div>
 
 <section class="payment-section">
     <div class="provider-title">METODE PEMBAYARAN</div>
     <div class="payment-grid">
-        <!-- Contoh Slot Bank/E-Wallet -->
         <div class="payment-card">
             <amp-img src="bank-bca.jpg" width="100" height="50" layout="responsive" alt="BCA"></amp-img>
         </div>
@@ -632,49 +556,30 @@ Testing6 menghadirkan tampilan modern dengan navigasi cepat, ringan, dan respons
     </div>
 </section>
 
-
-<!-- FAQ & ARTICLE -->
 <section class="sports-split">
 <div class="sports-left">
 <div class="faq-title">FAQ PEMAIN</div>
 <div class="faq-row"><div class="faq-name">Andi</div><div class="faq-text">UI sangat smooth.</div></div>
 <div class="faq-row"><div class="faq-name">Budi</div><div class="faq-text">Update cepat.</div></div>
 <div class="faq-row"><div class="faq-name">Rizky</div><div class="faq-text">Navigasi mudah.</div></div>
-<div class="faq-row"><div class="faq-name">Rizky</div><div class="faq-text">Navigasi mudah.</div></div>
-<div class="faq-row"><div class="faq-name">Rizky</div><div class="faq-text">Navigasi mudah.</div></div>
-<div class="faq-row"><div class="faq-name">Rizky</div><div class="faq-text">Navigasi mudah.</div></div>
+<div class="faq-row"><div class="faq-name">Roni</div><div class="faq-text">Situs sangat ringan diakses.</div></div>
+<div class="faq-row"><div class="faq-name">Siti</div><div class="faq-text">Sangat responsif untuk mobile.</div></div>
+<div class="faq-row"><div class="faq-name">Agus</div><div class="faq-text">Desain elegan dan premium.</div></div>
 </div>
 
 <div class="sports-right">
 <h3 class="provider-title">ARTICLE</h3>
 <p style="font-size:12px;color:#ffe7c2;line-height:1.6;">
-Panen123 menghadirkan UI modern dengan sistem informasi cepat, ringan, dan mudah digunakan di semua perangkat.
+Raja Padi 4D menghadirkan UI modern dengan sistem informasi cepat, ringan, dan mudah digunakan di semua perangkat. Nikmati navigasi lancar tanpa kendala.
 </p>
 </div>
 </section>
 
-<section class="provider-footer">
-    <h3 class="provider-title">GAME PROVIDER</h3>
-
-    <div class="provider-grid">
-        <div class="provider-box">PRAGMATIC</div>
-        <div class="provider-box">PG SOFT</div>
-        <div class="provider-box">HABANERO</div>
-        <div class="provider-box">MICROGAMING</div>
-        <div class="provider-box">JOKER</div>
-        <div class="provider-box">CQ9</div>
-        <div class="provider-box">SPADEGAMING</div>
-        <div class="provider-box">PLAYTECH</div>
-    </div>
-</section>
-
-<!-- FOOTER COPYRIGHT -->
 <footer class="footer-bottom">
-    <p>&copy; COPYRIGHT TESTING6 | 18+ | BY SUPPORT</p>
+    <p>&copy; COPYRIGHT RAJA PADI 4D | 18+ | BY SUPPORT</p>
 </footer>
 
 <div class="bottom-nav">
-    
     <div class="bottom-left">
         <a href="#" class="nav-btn">
             <amp-img src="telegram.png" width="20" height="20" layout="fixed"></amp-img>
@@ -693,8 +598,8 @@ Panen123 menghadirkan UI modern dengan sistem informasi cepat, ringan, dan mudah
             <span>Live Chat</span>
         </a>
     </div>
-
 </div>
 
+</div>
 </body>
 </html>
