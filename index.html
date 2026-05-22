@@ -20,133 +20,569 @@ body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animatio
 <style amp-custom>
 *{ margin:0; padding:0; box-sizing:border-box; }
 body{ font-family:'Poppins',sans-serif; background:linear-gradient(180deg,#120000,#060000); color:#fff; overflow-x:hidden; }
-.container{ max-width:1200px; margin:auto; padding:0 16px 100px; }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#120000,#060000);
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 16px 120px;
+}
 
 /* HEADER */
-.appbar{ position:sticky; top:0; z-index:999; height:60px; display:flex; align-items:center; justify-content:space-between; padding:0 16px; background:rgba(20,0,0,.75); backdrop-filter:blur(18px); border-bottom:1px solid rgba(255,170,0,.2); }
-.brand{ display:flex; align-items:center; }
-.menu-wrap{ position:relative; }
-.menu-btn{ font-size:22px; cursor:pointer; color:#ffcc70; padding:6px 10px; border:1px solid rgba(255,204,112,.3); border-radius:10px; }
-.menu{ position:absolute; right:0; top:42px; background:#1a0000; border:1px solid rgba(255,204,112,.2); border-radius:14px; width:170px; display:none; flex-direction:column; overflow:hidden; z-index:999; }
-.menu a{ padding:12px; font-size:12px; color:#fff; text-decoration:none; border-bottom:1px solid rgba(255,255,255,.05); }
-.menu-wrap:hover .menu{ display:flex; }
+.appbar{
+position:sticky;
+top:0;
+z-index:999;
+height:74px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 18px;
+background:rgba(20,0,0,.88);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,170,0,.18);
+}
+
+.brand{
+display:flex;
+align-items:center;
+}
+
+.brand amp-img{
+width:145px !important;
+height:auto !important;
+display:block;
+filter:drop-shadow(0 0 8px rgba(255,180,0,.25));
+}
+
+/* MENU */
+.menu-wrap{
+position:relative;
+}
+
+.menu-btn{
+font-size:22px;
+cursor:pointer;
+color:#ffcc70;
+padding:6px 10px;
+border:1px solid rgba(255,204,112,.3);
+border-radius:10px;
+}
+
+.menu{
+position:absolute;
+right:0;
+top:42px;
+background:#1a0000;
+border:1px solid rgba(255,204,112,.2);
+border-radius:14px;
+width:170px;
+display:none;
+flex-direction:column;
+overflow:hidden;
+z-index:999;
+}
+
+.menu a{
+padding:12px;
+font-size:12px;
+color:#fff;
+text-decoration:none;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.menu-wrap:hover .menu{
+display:flex;
+}
 
 /* HERO */
-.hero{ margin-top:10px; }
-.hero-card{ border-radius:22px; overflow:hidden; border:1px solid rgba(255,170,0,.25); box-shadow:0 0 25px rgba(255,120,0,.15); }
+.hero{
+margin-top:10px;
+}
+
+.hero-card{
+border-radius:22px;
+overflow:hidden;
+border:1px solid rgba(255,170,0,.25);
+box-shadow:0 0 25px rgba(255,120,0,.15);
+}
 
 /* NAVIGATION */
-.game-nav{ display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin:20px 0; }
-.nav-item{ background:linear-gradient(135deg,rgba(255,170,0,.10),rgba(42,0,0,.8)); border:1px solid rgba(255,204,112,.25); border-radius:14px; padding:12px 5px; text-align:center; text-decoration:none; transition:.3s; }
-.nav-item:hover{ transform:translateY(-2px); background:rgba(255,170,0,.18); }
-.nav-icon{ display:block; font-size:20px; margin-bottom:5px; }
-.nav-label{ display:block; font-size:10px; font-weight:700; font-family:'Orbitron',sans-serif; color:#ffcc70; }
-
-/* WRAP BOX */
-.wrap-box{ border:1px solid rgba(255,170,0,.15); background:rgba(20,0,0,.55); border-radius:20px; padding:16px; }
-.trending-title{ font-size:20px; font-weight:900; text-align:center; color:#ffcc70; margin-bottom:20px; font-family:'Orbitron',sans-serif; }
-.provider-title{ font-size:14px; font-weight:800; color:#ffcc70; margin:12px 0; }
-
-/* REFINED GRID */
-.slot-grid-8{ display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-bottom:16px; }
-.provider-grid-8{ display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-bottom:14px; }
-
-.slot-card{ aspect-ratio:1/1; border-radius:12px; overflow:hidden; border:1px solid rgba(255,170,0,.18); background:#1a0000; transition: .3s ease; }
-.slot-card:hover{ border-color: #ffcc70; transform: translateY(-2px); }
-
-.provider-grid-8 { 
-    display: grid; 
-    grid-template-columns: repeat(8, 1fr); 
-    gap: 10px; 
-    margin-bottom: 14px; 
+.game-nav{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:10px;
+margin:20px 0;
 }
-.provider-card { 
-    aspect-ratio: 7/3; 
-    border-radius: 10px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 6px; 
-    background: linear-gradient(180deg, #1a0000, #0d0000); 
-    border: 1px solid rgba(255,170,0,.15); 
-    transition: .3s ease; 
-    height: 50px;
+
+.nav-item{
+background:linear-gradient(135deg,rgba(255,170,0,.10),rgba(42,0,0,.8));
+border:1px solid rgba(255,204,112,.25);
+border-radius:14px;
+padding:12px 5px;
+text-align:center;
+text-decoration:none;
+transition:.3s;
 }
-.provider-card:hover { 
-    border-color: #ffcc70; 
-    transform: translateY(-2px); 
+
+.nav-item:hover{
+transform:translateY(-2px);
+background:rgba(255,170,0,.18);
 }
-.provider-card amp-img { 
-    max-width: 90%; 
-    max-height: 85%; 
+
+.nav-icon{
+display:block;
+font-size:20px;
+margin-bottom:5px;
 }
-    .nav-btn amp-img,
+
+.nav-label{
+display:block;
+font-size:10px;
+font-weight:700;
+font-family:'Orbitron',sans-serif;
+color:#ffcc70;
+}
+
+/* WRAP */
+.wrap-box{
+border:1px solid rgba(255,170,0,.15);
+background:rgba(20,0,0,.55);
+border-radius:20px;
+padding:16px;
+}
+
+.trending-title{
+font-size:20px;
+font-weight:900;
+text-align:center;
+color:#ffcc70;
+margin-bottom:20px;
+font-family:'Orbitron',sans-serif;
+}
+
+.provider-title{
+font-size:14px;
+font-weight:800;
+color:#ffcc70;
+margin:12px 0;
+}
+
+/* SLOT GRID */
+.slot-grid-8{
+display:grid;
+grid-template-columns:repeat(8,1fr);
+gap:10px;
+margin-bottom:16px;
+}
+
+.slot-card{
+aspect-ratio:1/1;
+border-radius:12px;
+overflow:hidden;
+border:1px solid rgba(255,170,0,.18);
+background:#1a0000;
+}
+
+/* PROVIDER GRID */
+.provider-grid-8{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-top:12px;
+}
+
+.provider-card{
+height:64px;
+border-radius:14px;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:10px;
+background:linear-gradient(
+180deg,
+rgba(40,0,0,.95),
+rgba(15,0,0,.95)
+);
+border:1px solid rgba(255,170,0,.15);
+overflow:hidden;
+transition:.25s ease;
+}
+
+.provider-card:hover{
+border-color:#ffcc70;
+transform:translateY(-2px);
+}
+
+.provider-card amp-img{
+max-width:88%;
+max-height:34px;
+object-fit:contain;
+}
+
+/* META */
+.meta-info{
+text-align:center;
+font-size:12px;
+line-height:1.8;
+color:#ffe7c2;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,204,112,.1);
+padding:14px;
+border-radius:16px;
+margin:22px 0;
+}
+
+/* PAYMENT */
+.payment-section{
+margin-top:24px;
+padding:18px;
+background:rgba(255,255,255,.03);
+border-radius:20px;
+border:1px solid rgba(255,170,0,.12);
+}
+
+.payment-title{
+font-size:18px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+text-align:center;
+color:#ffcc70;
+margin-bottom:18px;
+}
+
+.payment-grid{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:10px;
+}
+
+.payment-card{
+height:50px;
+background:rgba(255,255,255,.9);
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:8px;
+}
+
+.payment-card amp-img{
+max-width:75%;
+height:auto;
+object-fit:contain;
+}
+
+/* INFO */
+.info-section{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:18px;
+margin-top:24px;
+}
+
+.info-box{
+background:rgba(20,0,0,.72);
+border:1px solid rgba(255,170,0,.15);
+border-radius:20px;
+padding:18px;
+}
+/* INFO SECTION */
+.info-section{
+display:grid;
+grid-template-columns:420px 1fr;
+gap:18px;
+margin-top:24px;
+align-items:start;
+}
+
+.info-box{
+background:linear-gradient(
+180deg,
+rgba(35,0,0,.92),
+rgba(18,0,0,.96)
+);
+border:1px solid rgba(255,170,0,.18);
+border-radius:24px;
+padding:20px;
+box-shadow:
+0 0 0 1px rgba(255,170,0,.05),
+0 8px 30px rgba(0,0,0,.35);
+}
+
+/* TITLE */
+.info-title{
+font-size:16px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+color:#ffcc70;
+margin-bottom:18px;
+padding-bottom:12px;
+border-bottom:1px solid rgba(255,204,112,.10);
+}
+
+/* TESTIMONI */
+.testi-card{
+background:rgba(255,255,255,.02);
+border:1px solid rgba(255,170,0,.08);
+border-radius:18px;
+padding:16px;
+margin-bottom:14px;
+transition:.25s ease;
+}
+
+.testi-card:hover{
+transform:translateY(-2px);
+border-color:rgba(255,204,112,.25);
+background:rgba(255,255,255,.03);
+}
+
+.testi-head{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+gap:10px;
+}
+
+.testi-name{
+font-size:13px;
+font-weight:700;
+color:#ffcc70;
+}
+
+.testi-stars{
+font-size:13px;
+letter-spacing:1px;
+}
+
+.testi-text{
+font-size:13px;
+line-height:1.8;
+color:#fff0d8;
+}
+
+/* ARTICLE */
+.article-text{
+font-size:15px;
+line-height:2.1;
+color:#fff0d8;
+}
+
+.article-text p{
+margin-bottom:24px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.info-section{
+grid-template-columns:1fr;
+}
+
+.article-text{
+font-size:13px;
+line-height:2;
+}
+
+.testi-text{
+font-size:12px;
+}
+
+}
+
+/* FOOTER */
+.footer-bottom{
+margin-top:30px;
+padding:20px 0;
+text-align:center;
+border-top:1px solid rgba(255,204,112,.08);
+}
+
+/* FIXED BOTTOM NAV */
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:100%;
+max-width:1200px;
+height:88px;
+background:rgba(15,0,0,.96);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 80px;
+z-index:999;
+border-top:1px solid rgba(255,204,112,.12);
+backdrop-filter:blur(10px);
+}
+
+/* LEFT & RIGHT */
+.bottom-left,
+.bottom-right{
+width:220px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* BUTTON */
+.nav-btn{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+color:#ffcc70;
+gap:6px;
+transition:.25s ease;
+}
+
+.nav-btn:hover{
+transform:translateY(-2px);
+}
+
+.nav-btn span{
+font-size:12px;
+font-weight:700;
+font-family:'Orbitron',sans-serif;
+}
+
+/* ICON */
+.nav-btn amp-img{
+width:38px !important;
+height:38px !important;
+object-fit:contain;
+filter:drop-shadow(0 0 10px rgba(255,180,0,.45));
+}
+
+/* CENTER BUTTON */
+.nav-center{
+position:absolute;
+left:50%;
+transform:translateX(-50%) translateY(-18px);
+width:88px;
+height:88px;
+border-radius:50%;
+background:linear-gradient(180deg,#ffcc70,#d89a00);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+box-shadow:
+0 8px 25px rgba(255,170,0,.35),
+0 0 18px rgba(255,190,0,.25);
+border:4px solid #2a0000;
+transition:.25s ease;
+}
+
+.nav-center:hover{
+transform:translateX(-50%) translateY(-22px) scale(1.03);
+}
+
 .nav-center amp-img{
-filter: drop-shadow(0 0 8px rgba(255,180,0,.45));
+width:46px !important;
+height:46px !important;
+object-fit:contain;
 }
-    .nav-btn{
-gap:8px;
+
+.nav-center span{
+font-size:10px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+color:#2a0000;
+margin-top:3px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.bottom-nav{
+height:82px;
+padding:0 24px;
+max-width:100%;
+}
+
+.bottom-left,
+.bottom-right{
+width:100px;
+}
+
+.nav-btn amp-img{
+width:34px !important;
+height:34px !important;
 }
 
 .nav-center{
-width:78px;
-height:78px;
+width:82px;
+height:82px;
+transform:translateX(-50%) translateY(-16px);
 }
 
-/* META INFO */
-.meta-info{ text-align:center; font-size:12px; line-height:1.8; color:#ffe7c2; background:rgba(255,255,255,.03); border:1px solid rgba(255,204,112,.1); padding:14px; border-radius:16px; margin:22px 0; }
+.nav-center amp-img{
+width:42px !important;
+height:42px !important;
+}
 
-/* REFINED PAYMENT */
-.payment-section{ margin-top:24px; padding:18px; background:rgba(255,255,255,.03); border-radius:20px; border:1px solid rgba(255,170,0,.12); }
-.payment-title{ font-size:18px; font-family:'Orbitron',sans-serif; font-weight:800; text-align:center; color:#ffcc70; margin-bottom:18px; }
-.payment-grid{ display:grid; grid-template-columns:repeat(7,1fr); gap:10px; }
-.payment-card{ height:50px; background:rgba(255, 255, 255, 0.9); border-radius:12px; display:flex; align-items:center; justify-content:center; padding:8px; border:1px solid transparent; transition: .3s ease; }
-.payment-card:hover{ background:#fff; border-color: #ffcc70; transform: translateY(-2px); }
-.payment-card amp-img{ max-width:75%; height:auto; object-fit:contain; }
+.nav-btn span{
+font-size:10px;
+}
 
-/* INFO SECTION */
-.info-section{ display:grid; grid-template-columns:1fr 1.2fr; gap:18px; margin-top:24px; }
-.info-box{ background:rgba(20,0,0,.72); border:1px solid rgba(255,170,0,.15); border-radius:20px; padding:18px; }
-.info-title{ font-size:18px; font-family:'Orbitron',sans-serif; font-weight:800; color:#ffcc70; margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid rgba(255,204,112,.10); }
+}
 
-/* FAQ & TESTIMONI */
-.faq-row{ padding:14px; border-radius:14px; background:rgba(255,255,255,.03); margin-bottom:12px; border:1px solid rgba(255,255,255,.04); }
-.faq-header{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
-.faq-name{ font-size:13px; font-weight:700; color:#ffcc70; }
-.faq-stars{ font-size: 13px; color: #ffcc70; letter-spacing: 2px; }
-.faq-text{ font-size:12px; line-height:1.7; color:#ffe7c2; }
-
-/* ARTICLE */
-.article-text{ font-size:13px; line-height:2; color:#ffe7c2; text-align:justify; }
-.article-text p{ margin-bottom:16px; }
-
-/* FOOTER */
-.footer-bottom{ margin-top:30px; padding:20px 0; text-align:center; border-top:1px solid rgba(255,204,112,.08); }
-.footer-bottom p{ font-size:11px; font-family:'Orbitron',sans-serif; color:#ffcc70; }
-
-/* FIXED BOTTOM NAV */
-.bottom-nav{ position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:calc(100% - 24px); max-width:1200px; height:75px; background:rgba(15,0,0,.96); display:flex; align-items:center; justify-content:space-between; padding:0 18px; border-radius:24px 24px 0 0; z-index:999; border: 1px solid rgba(255,204,112,.15); border-bottom: none; }
-.bottom-left, .bottom-right{ width:90px; display:flex; justify-content:center; }
-.nav-btn{ display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#ffcc70; gap:5px; }
-.nav-btn span{ font-size:10px; font-family:'Orbitron',sans-serif; font-weight:700; }
-.nav-btn amp-img{ display:block; margin:0 auto; }
-.nav-center{ position:absolute; left:50%; transform:translateX(-50%) translateY(-18px); width:66px; height:66px; border-radius:50%; background:linear-gradient(180deg,#ffcc70,#c58a00); display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#120000; font-weight:900; box-shadow: 0 4px 15px rgba(255,170,0,0.4); }
-.nav-center span{ font-size:10px; margin-top:2px; font-family:'Orbitron',sans-serif; }
-
-/* RESPONSIVE MOBILE */
+/* MOBILE */
 @media(max-width:768px){
-.game-nav{ gap:6px; }
-.nav-label{ font-size:8px; }
-.slot-grid-8{ grid-template-columns:repeat(2,1fr); }
-.provider-grid-8{ grid-template-columns:repeat(4,1fr); gap:6px; }
-.provider-card{ padding:4px; border-radius:8px; }
-.provider-card amp-img{ max-width:75%; }
-.payment-grid{ grid-template-columns:repeat(3,1fr); }
-.info-section{ grid-template-columns:1fr; gap:14px; }
-.payment-card{ height:54px; }
-.payment-card amp-img{ max-width:65%; }
-.info-title{ font-size:16px; }
-.article-text{ font-size:12px; line-height:1.9; }
+
+.slot-grid-8{
+grid-template-columns:repeat(2,1fr);
+gap:8px;
+}
+
+.provider-grid-8{
+grid-template-columns:repeat(3,1fr);
+gap:8px;
+}
+
+.provider-card{
+height:58px;
+padding:8px;
+border-radius:12px;
+}
+
+.provider-card amp-img{
+max-width:82%;
+max-height:28px;
+}
+
+.payment-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.info-section{
+grid-template-columns:1fr;
+}
+
+.game-nav{
+gap:6px;
+}
+
+.nav-label{
+font-size:8px;
+}
+
 }
 </style>
 <script type="application/ld+json">
@@ -165,7 +601,13 @@ height:78px;
 <div class="container">
 
 <header class="appbar">
-<div class="brand"><amp-img src="asset/logo-fifa138.png"width="180"height="48"layout="intrinsic"></div>
+<div class="brand"><amp-img
+src="asset/logo-fifa138.png"
+width="145"
+height="40"
+layout="intrinsic"
+alt="FIFA138 Logo">
+</amp-img></div>
 <div class="menu-wrap">
     <div class="menu-btn">☰</div>
     <div class="menu">
@@ -239,70 +681,98 @@ FIFA138 menghadirkan pengalaman hiburan digital modern dengan tampilan premium, 
 </section>
 
 <section class="info-section">
-<div class="info-box">
-<div class="info-title">APA KATA MEREKA?</div>
 
-<div class="faq-row">
-    <div class="faq-header">
-        <div class="faq-name">Andi Ferdiansyah - Palembang</div>
-        <div class="faq-stars">⭐⭐⭐⭐⭐</div>
-    </div>
-    <div class="faq-text">Gokil sih, tampilannya kekinian banget dan pas dibuka lewat HP lancar jaya tanpa buffering!</div>
+<!-- TESTIMONI -->
+<div class="info-box testi-box">
+
+<div class="info-title">
+APA KATA MEREKA?
 </div>
 
-<div class="faq-row">
-    <div class="faq-header">
-        <div class="faq-name">Budi Mansur - Riau</div>
-        <div class="faq-stars">⭐⭐⭐⭐⭐</div>
-    </div>
-    <div class="faq-text">Suka banget sama susunan menunya, rapi dan praktis. Jadi nggak pake bingung pas mau milih game seru.</div>
+<div class="testi-card">
+<div class="testi-head">
+<span class="testi-name">Andi Ferdiansyah - Palembang</span>
+<span class="testi-stars">⭐⭐⭐⭐⭐</span>
 </div>
-
-<div class="faq-row">
-    <div class="faq-header">
-        <div class="faq-name">Rizky Ramadhan - Batam</div>
-        <div class="faq-stars">⭐⭐⭐⭐⭐</div>
-    </div>
-    <div class="faq-text">Desain nya juara, Kelihatan premium dan elegan, bikin betah berlama-lama nge-game di sini.</div>
-</div>
-
-<div class="faq-row">
-    <div class="faq-header">
-        <div class="faq-name">Siti Julaiha - Bandung</div>
-        <div class="faq-stars">⭐⭐⭐⭐⭐</div>
-    </div>
-    <div class="faq-text">Proses Login nya cepet banget, dan mau pindah-pindah game ga ribet. Cocok banget sama style main gue.</div>
-</div>
-
-<div class="faq-row">
-    <div class="faq-header">
-        <div class="faq-name">Fajar Bima - Jakarta</div>
-        <div class="faq-stars">⭐⭐⭐⭐⭐</div>
-    </div>
-    <div class="faq-text">Transisi antar halamannya mulus banget. Berasa kelas premium dan digarap secara profesional.</div>
+<div class="testi-text">
+Gokil sih, tampilannya kekinian banget dan pas dibuka lewat HP lancar jaya tanpa buffering!
 </div>
 </div>
 
-<div class="info-box">
-<div class="info-title">FIFA138 RUANG HIBURAN DIGITAL KEKINIAN</div>
+<div class="testi-card">
+<div class="testi-head">
+<span class="testi-name">Budi Mansur - Riau</span>
+<span class="testi-stars">⭐⭐⭐⭐⭐</span>
+</div>
+<div class="testi-text">
+Suka banget sama susunan menunya, rapi dan praktis. Jadi nggak pake bingung pas mau milih game seru.
+</div>
+</div>
+
+<div class="testi-card">
+<div class="testi-head">
+<span class="testi-name">Rizky Ramadhan - Batam</span>
+<span class="testi-stars">⭐⭐⭐⭐⭐</span>
+</div>
+<div class="testi-text">
+Desain nya juara, Kelihatan premium dan elegan, bikin betah berlama-lama nge-game di sini.
+</div>
+</div>
+
+<div class="testi-card">
+<div class="testi-head">
+<span class="testi-name">Siti Julaiha - Bandung</span>
+<span class="testi-stars">⭐⭐⭐⭐⭐</span>
+</div>
+<div class="testi-text">
+Proses Login nya cepet banget, dan mau pindah-pindah game ga ribet. Cocok banget sama style main gue.
+</div>
+</div>
+
+<div class="testi-card">
+<div class="testi-head">
+<span class="testi-name">Fajar Bima - Jakarta</span>
+<span class="testi-stars">⭐⭐⭐⭐⭐</span>
+</div>
+<div class="testi-text">
+Transisi antar halamannya mulus banget. Berasa kelas premium dan digarap secara profesional.
+</div>
+</div>
+
+</div>
+
+<!-- ARTICLE -->
+<div class="info-box article-box">
+
+<div class="info-title">
+FIFA138 RUANG HIBURAN DIGITAL KEKINIAN
+</div>
+
 <div class="article-text">
+
 <p>
 Halo para pencari hiburan seru! FIFA138 kini hadir sebagai tempat nongkrong digital paling fresh yang membawa konsep visual masa depan. Dengan paduan warna gelap berkelas dan sentuhan emas yang mewah, kami merancang ruang bermain yang ramah, super responsif, dan pastinya memanjakan mata di perangkat apa pun yang kamu pakai—baik itu smartphone kesayangan ataupun desktop.
 </p>
+
 <p>
 Nggak perlu ribet lagi cari menu favoritmu. Mulai dari kategori slot, casino, sports, hingga kumpulan bonus menarik, semuanya sudah ditata serapi mungkin agar navigasimu berjalan simpel dan asyik. Kami percaya kalau kenyamananmu saat menjelajahi web adalah prioritas utama.
 </p>
+
 <p>
 Ditopang oleh optimasi game display terbaru, setiap halaman di FIFA138 mampu terbuka dalam hitungan detik. Rasakan sensasi berpindah menu yang super stabil tanpa drama lag atau loading yang bikin jengkel. Tinggal klik, langsung masuk!
 </p>
+
 <p>
 Bukan cuma performa yang dipikirkan, estetika visual barisan game dan provider andalan juga kami kemas dalam bentuk grid modern yang bersih dan proporsional. Tampilan yang clean ini bikin mata kamu nggak gampang lelah meskipun asyik berselancar seharian penuh.
 </p>
+
 <p>
 Jadi, tunggu apa lagi? Nikmati kombinasi apik antara kecepatan akses yang instan, visual berkelas, dan kemudahan navigasi modern yang bisa kamu rasakan kapan saja dan di mana saja hanya di FIFA138!
 </p>
+
 </div>
 </div>
+
 </section>
 
 <footer class="footer-bottom">
@@ -330,7 +800,7 @@ layout="fixed"></amp-img>
 
 <div class="bottom-right">
     <a href="https://linkly.link/2F9LL" class="nav-btn">
-        <amp-img src="asset/chat.png"
+        <amp-img src="asset/livechat.png"
 width="36"
 height="36"
 layout="fixed"></amp-img>
