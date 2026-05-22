@@ -1,0 +1,726 @@
+<!doctype html>
+<html ⚡ lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<title>FIFA138 | Website Main Game Generasi Modern Jalur Resmi</title>
+
+<meta name="description" content="FIFA138 merupakan website game modern dengan tampilan premium futuristik, akses cepat, navigasi ringan, dan pengalaman hiburan digital modern untuk semua perangkat.">
+
+<link rel="canonical" href="https://bubuy-game.github.io/fifa138/">
+
+<meta name="robots" content="index, follow">
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style amp-boilerplate>
+body{
+-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+animation:-amp-start 8s steps(1,end) 0s 1 normal both
+}
+@-webkit-keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+@keyframes -amp-start{
+from{visibility:hidden}
+to{visibility:visible}
+}
+</style>
+
+<noscript>
+<style amp-boilerplate>
+body{
+-webkit-animation:none;
+-moz-animation:none;
+-ms-animation:none;
+animation:none
+}
+</style>
+</noscript>
+
+<style amp-custom>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#120000,#060000);
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 16px 100px;
+}
+
+/* HEADER */
+
+.appbar{
+position:sticky;
+top:0;
+z-index:999;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 16px;
+background:rgba(20,0,0,.75);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,170,0,.2);
+}
+
+.brand{
+display:flex;
+align-items:center;
+}
+
+.menu-wrap{
+position:relative;
+}
+
+.menu-btn{
+font-size:22px;
+cursor:pointer;
+color:#ffcc70;
+padding:6px 10px;
+border:1px solid rgba(255,204,112,.3);
+border-radius:8px;
+}
+
+.menu{
+position:absolute;
+right:0;
+top:40px;
+background:#1a0000;
+border:1px solid rgba(255,204,112,.2);
+border-radius:12px;
+width:160px;
+display:none;
+flex-direction:column;
+overflow:hidden;
+}
+
+.menu a{
+padding:10px;
+font-size:12px;
+color:#fff;
+text-decoration:none;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.menu-wrap:hover .menu{
+display:flex;
+}
+
+/* HERO */
+
+.hero{
+margin-top:10px;
+}
+
+.hero-card{
+position:relative;
+border-radius:20px;
+overflow:hidden;
+border:1px solid rgba(255,170,0,.25);
+box-shadow:0 0 25px rgba(255,100,0,.18);
+}
+
+/* NAVIGATION */
+
+.game-nav{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:10px;
+margin:20px 0;
+}
+
+.nav-item{
+background:linear-gradient(135deg, rgba(255,170,0,0.1), rgba(42,0,0,0.8));
+border:1px solid rgba(255,204,112,0.3);
+border-radius:12px;
+padding:12px 5px;
+text-align:center;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav-item:hover{
+background:rgba(255,170,0,0.25);
+transform:translateY(-2px);
+}
+
+.nav-icon{
+display:block;
+font-size:20px;
+margin-bottom:5px;
+}
+
+.nav-label{
+display:block;
+font-size:10px;
+font-weight:700;
+color:#ffcc70;
+font-family:'Orbitron',sans-serif;
+}
+
+/* SECTION */
+
+.wrap-box{
+border:1px solid rgba(255,170,0,.2);
+background:rgba(20,0,0,.55);
+border-radius:18px;
+padding:14px;
+}
+
+.trending-title{
+display:block;
+font-size:20px;
+font-weight:900;
+text-align:center;
+color:#ffcc70;
+margin:0 auto 20px;
+padding-bottom:8px;
+font-family:'Orbitron',sans-serif;
+}
+
+.provider-title{
+font-size:14px;
+font-weight:800;
+color:#ffcc70;
+margin:10px 0;
+}
+
+/* GRID */
+
+.slot-grid-8{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-bottom:14px;
+}
+
+.provider-grid-8{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-bottom:14px;
+}
+
+.slot-card{
+aspect-ratio:1/1;
+border-radius:10px;
+background:#2a0000;
+border:1px solid rgba(255,170,0,.25);
+overflow:hidden;
+}
+
+.provider-card{
+aspect-ratio:7/3;
+border-radius:8px;
+background:linear-gradient(180deg,#1f0000,#0f0000);
+border:1px solid rgba(255,170,0,.2);
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:6px;
+}
+
+/* PAYMENT */
+
+.payment-section{
+margin-top:25px;
+padding:15px;
+background:rgba(255,255,255,.03);
+border-radius:15px;
+border:1px solid rgba(255,170,0,.1);
+}
+
+.payment-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+}
+
+.payment-card{
+background:#fff;
+border-radius:10px;
+padding:10px;
+border:1px solid rgba(255,170,0,.15);
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:65px;
+}
+
+.payment-card amp-img{
+object-fit:contain;
+max-width:100%;
+}
+
+/* META */
+
+.meta-info{
+text-align:center;
+font-size:12px;
+line-height:1.7;
+color:#ffe7c2;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,204,112,.12);
+padding:12px 14px;
+border-radius:12px;
+margin:20px 0;
+}
+
+/* FAQ + ARTICLE */
+
+.sports-split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+margin-top:14px;
+}
+
+.sports-left,
+.sports-right{
+background:rgba(20,0,0,.75);
+border:1px solid rgba(255,170,0,.2);
+border-radius:16px;
+padding:14px;
+}
+
+.faq-title{
+font-size:14px;
+font-weight:900;
+color:#ffcc70;
+margin-bottom:10px;
+}
+
+.faq-row{
+padding:10px;
+margin-bottom:8px;
+background:rgba(255,255,255,.03);
+border-radius:10px;
+}
+
+.faq-name{
+font-size:12px;
+font-weight:800;
+color:#ffcc70;
+}
+
+.faq-text{
+font-size:12px;
+color:#ffe7c2;
+line-height:1.6;
+}
+
+/* FOOTER */
+
+.footer-bottom{
+margin-top:30px;
+padding:20px 0;
+text-align:center;
+border-top:1px solid rgba(255,204,112,.1);
+}
+
+.footer-bottom p{
+font-family:'Orbitron',sans-serif;
+font-size:11px;
+color:#ffcc70;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:calc(100% - 24px);
+max-width:1200px;
+height:70px;
+background:rgba(15,0,0,.92);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 18px;
+border-radius:22px 22px 0 0;
+z-index:999;
+}
+
+.bottom-left,
+.bottom-right{
+width:80px;
+display:flex;
+justify-content:center;
+}
+
+.nav-btn{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-decoration:none;
+color:#ffcc70;
+gap:3px;
+}
+
+.nav-btn span{
+font-size:9px;
+font-family:'Orbitron',sans-serif;
+}
+
+.nav-center{
+position:absolute;
+left:50%;
+transform:translateX(-50%) translateY(-18px);
+width:66px;
+height:66px;
+background:linear-gradient(180deg,#ffcc70,#b8860b);
+border-radius:50%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+color:#120000;
+}
+
+.nav-center span{
+font-size:9px;
+font-weight:900;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.game-nav{
+gap:5px;
+}
+
+.nav-label{
+font-size:8px;
+}
+
+.sports-split{
+grid-template-columns:1fr;
+}
+
+.payment-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="appbar">
+
+<div class="brand">
+<amp-img src="asset/logo.png"
+width="120"
+height="32"
+layout="intrinsic"
+alt="Logo FIFA138">
+</amp-img>
+</div>
+
+<div class="menu-wrap">
+
+<div class="menu-btn">☰</div>
+
+<div class="menu">
+<a href="https://linkly.link/2F9LL">Daftar VIP</a>
+<a href="https://linkly.link/2F9LL">Member Login</a>
+<a href="https://linkly.link/2F9LL">Game</a>
+<a href="https://linkly.link/2F9LL">Promosi</a>
+</div>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-card">
+
+<amp-img
+src="asset/fifa138-banner.png"
+width="1200"
+height="700"
+layout="responsive"
+alt="FIFA138 Banner">
+</amp-img>
+
+</div>
+</section>
+
+<nav class="game-nav">
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🎰</span>
+<span class="nav-label">Slot</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🃏</span>
+<span class="nav-label">Casino</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">⚽</span>
+<span class="nav-label">Sports</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🐟</span>
+<span class="nav-label">Fish</span>
+</a>
+
+<a href="https://linkly.link/2F9LL" class="nav-item">
+<span class="nav-icon">🎁</span>
+<span class="nav-label">Bonus</span>
+</a>
+
+</nav>
+
+<section style="margin-top:25px;">
+
+<div class="wrap-box">
+
+<h1 class="trending-title">
+TRENDING GAMES SLOT
+</h1>
+
+<div class="provider-title">Hot Games</div>
+
+<div class="slot-grid-8">
+
+<div class="slot-card">
+<amp-img src="asset/Aztec Gems.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Fortune Tiger.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Gates of Gatot Kaca.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Gem Saviour Conquest.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/Lucky Neko.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/koi-gate.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/mahjongways2.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+<div class="slot-card">
+<amp-img src="asset/muscle-fortune.jpg" width="100" height="100" layout="responsive"></amp-img>
+</div>
+
+</div>
+
+<div class="provider-title">Provider Game</div>
+
+<div class="provider-grid-8">
+
+<div class="provider-card">
+<amp-img src="asset/jili-active.webp" width="100" height="50" layout="intrinsic"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/pgsoft-active.webp" width="100" height="50" layout="intrinsic"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/playngo-active.webp" width="100" height="50" layout="intrinsic"></amp-img>
+</div>
+
+<div class="provider-card">
+<amp-img src="asset/playtech-active.webp" width="100" height="50" layout="intrinsic"></amp-img>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="meta-info">
+FIFA138 menghadirkan pengalaman hiburan digital modern dengan tampilan premium, navigasi ringan, dan desain futuristik yang nyaman di semua perangkat.
+</div>
+
+<section class="payment-section">
+
+<div class="provider-title">
+METODE PEMBAYARAN
+</div>
+
+<div class="payment-grid">
+
+<div class="payment-card">
+<amp-img src="asset/bca.png" width="120" height="60" layout="intrinsic" alt="BCA"></amp-img>
+</div>
+
+<div class="payment-card">
+<amp-img src="asset/bni.png" width="120" height="60" layout="intrinsic" alt="BNI"></amp-img>
+</div>
+
+<div class="payment-card">
+<amp-img src="asset/bri.png" width="120" height="60" layout="intrinsic" alt="BRI"></amp-img>
+</div>
+
+<div class="payment-card">
+<amp-img src="asset/dana.png" width="120" height="60" layout="intrinsic" alt="DANA"></amp-img>
+</div>
+
+<div class="payment-card">
+<amp-img src="asset/gopay.png" width="120" height="60" layout="intrinsic" alt="GOPAY"></amp-img>
+</div>
+
+<div class="payment-card">
+<amp-img src="asset/mandiri.png" width="120" height="60" layout="intrinsic" alt="MANDIRI"></amp-img>
+</div>
+
+<div class="payment-card">
+<amp-img src="asset/maybank.png" width="120" height="60" layout="intrinsic" alt="MAYBANK"></amp-img>
+</div>
+
+</div>
+
+</section>
+
+<section class="sports-split">
+
+<div class="sports-left">
+
+<div class="faq-title">
+FAQ PEMAIN
+</div>
+
+<div class="faq-row">
+<div class="faq-name">Andi</div>
+<div class="faq-text">
+Tampilannya modern dan loading website terasa ringan di HP saya.
+</div>
+</div>
+
+<div class="faq-row">
+<div class="faq-name">Budi</div>
+<div class="faq-text">
+Menu tersusun rapi jadi mudah mencari game favorit tanpa bingung.
+</div>
+</div>
+
+<div class="faq-row">
+<div class="faq-name">Rizky</div>
+<div class="faq-text">
+UI terlihat premium dan nyaman dipakai dalam waktu lama.
+</div>
+</div>
+
+<div class="faq-row">
+<div class="faq-name">Siti</div>
+<div class="faq-text">
+Bagian metode pembayaran tampil jelas dan responsive di mobile.
+</div>
+</div>
+
+<div class="faq-row">
+<div class="faq-name">Fajar</div>
+<div class="faq-text">
+Animasi dan transisi halaman terasa smooth dan profesional.
+</div>
+</div>
+
+</div>
+
+<div class="sports-right">
+
+<h3 class="provider-title">
+ARTICLE
+</h3>
+
+<p style="font-size:12px;color:#ffe7c2;line-height:1.9;text-align:justify;">
+
+FIFA138 hadir sebagai platform hiburan digital modern dengan desain premium futuristik yang dibuat khusus untuk memberikan pengalaman browsing yang nyaman dan responsif di berbagai perangkat. Dengan kombinasi tampilan elegan, navigasi ringan, dan struktur halaman yang rapi, pengguna dapat menikmati pengalaman akses website yang lebih cepat tanpa hambatan. Semua elemen visual dirancang agar tetap terlihat modern namun tetap ringan ketika dibuka melalui smartphone maupun desktop.
+
+Tampilan utama FIFA138 menggunakan konsep user interface modern dengan dominasi warna gelap yang dipadukan dengan aksen emas premium. Kombinasi ini memberikan kesan eksklusif sekaligus profesional sehingga membuat pengalaman pengguna terasa lebih nyaman saat menjelajahi berbagai fitur yang tersedia. Seluruh menu utama seperti slot, casino, sports, fish, dan bonus juga disusun dengan struktur yang sederhana agar mudah digunakan oleh semua pengguna.
+
+Selain fokus pada desain visual, FIFA138 juga mengutamakan performa website agar tetap ringan dan stabil di berbagai browser modern. Penggunaan struktur AMP membuat loading halaman menjadi lebih cepat sehingga pengguna tidak perlu menunggu lama ketika membuka halaman utama maupun berpindah antar menu. Optimasi ini sangat membantu terutama bagi pengguna mobile yang menginginkan akses cepat dengan penggunaan data yang lebih efisien.
+
+Bagian trending games dibuat dengan tampilan grid modern yang responsif sehingga seluruh game dapat terlihat lebih rapi dan menarik. Pengguna dapat menemukan berbagai game populer dengan tampilan visual yang lebih hidup dan nyaman dilihat. Selain itu, bagian provider game juga ditampilkan dalam desain clean minimalis agar memudahkan pengguna mengenali provider favorit mereka secara cepat.
+
+FIFA138 juga menghadirkan tampilan metode pembayaran yang lebih modern dan kompatibel di berbagai perangkat termasuk Safari iPhone dan browser Android. Seluruh logo pembayaran ditampilkan secara jelas dan proporsional sehingga pengguna dapat melihat pilihan transaksi dengan lebih nyaman. Struktur payment section juga sudah dioptimalkan agar gambar tidak rusak atau hilang ketika diakses melalui mobile device.
+
+Tidak hanya mengutamakan visual premium, FIFA138 juga memperhatikan kenyamanan navigasi secara keseluruhan. Setiap bagian halaman dirancang agar mudah dipahami oleh pengguna baru maupun pengguna lama. Efek hover yang halus, animasi ringan, dan transisi modern membuat pengalaman browsing terasa lebih interaktif tanpa mengurangi performa website.
+
+Dengan perpaduan desain futuristik, performa ringan, tampilan responsif, serta pengalaman pengguna yang nyaman, FIFA138 menjadi salah satu platform hiburan digital modern yang cocok digunakan kapan saja dan di mana saja. Seluruh elemen website dirancang untuk memberikan pengalaman akses yang lebih cepat, stabil, dan menyenangkan di semua perangkat modern saat ini.
+
+</p>
+
+</div>
+
+</section>
+
+<footer class="footer-bottom">
+<p>
+© COPYRIGHT FIFA138 | 18+ | SUPPORT SYSTEM
+</p>
+</footer>
+
+<div class="bottom-nav">
+
+<div class="bottom-left">
+<a href="https://linkly.link/2F9LL" class="nav-btn">
+<amp-img src="asset/telegram.png" width="20" height="20" layout="fixed"></amp-img>
+<span>Telegram</span>
+</a>
+</div>
+
+<a href="https://linkly.link/2F9LL" class="nav-center">
+<amp-img src="asset/daftar.png" width="28" height="28" layout="fixed"></amp-img>
+<span>DAFTAR</span>
+</a>
+
+<div class="bottom-right">
+<a href="https://linkly.link/2F9LL" class="nav-btn">
+<amp-img src="asset/chat.png" width="20" height="20" layout="fixed"></amp-img>
+<span>Live Chat</span>
+</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
